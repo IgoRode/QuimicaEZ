@@ -1,0 +1,26 @@
+#facepage{
+	position: relative;
+}
+.logo{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	top: 10%;
+}
+#desc{
+	position: absolute;
+	top: 30%;
+	text-align: center;
+}
+#escolha{
+	background-color: rgba(255, 153, 0,.8);
+	border-radius:1vw;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 60vw;
+}
+#escolha a{
+	text-decoration: none;
+	color: #fff;
+}
