@@ -2,14 +2,23 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 10rem 1rem 0 1rem;
+	margin: 8rem 1rem 0 1rem;
 }
 .jtxt{
 	text-align: center;
 	font-size: 1rem;
 }
+
 @media screen and (min-width: 992px) {
-  .jtxt{
-  	font-size: 1.5rem;
-  }
+	.facepage{
+		margin: 12rem 1rem 0 1rem;
+	}
+  	.jtxt{
+  		font-size: 1.5rem;
+  	}
+  	.butao{
+  		font-size: 1.2rem;
+  		text-align:center;
+  		width: 10rem;
+  	}
 }
