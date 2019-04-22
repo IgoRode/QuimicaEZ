@@ -1,26 +1,15 @@
-#facepage{
-	position: relative;
+.facepage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10rem 1rem 0 1rem;
 }
-.logo{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%,0);
-	top: 10%;
-}
-#desc{
-	position: absolute;
-	top: 30%;
+.jtxt{
 	text-align: center;
+	font-size: 1rem;
 }
-#escolha{
-	background-color: rgba(255, 153, 0,.8);
-	border-radius:1vw;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%,0);
-	width: 60vw;
-}
-#escolha a{
-	text-decoration: none;
-	color: #fff;
+@media screen and (min-width: 992px) {
+  .jtxt{
+  	font-size: 1.5rem;
+  }
 }
