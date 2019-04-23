@@ -3,11 +3,14 @@
 	margin: 0;
 }
 html,body{
-	height: 100vh;
+	/* height: 100vh; */
 	font-family: 'Karla', sans-serif;
 }
 body{
-	background:url('../img/behind.jpg')center no-repeat;
+	background:url('../img/behind.jpg')no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 .logo{
