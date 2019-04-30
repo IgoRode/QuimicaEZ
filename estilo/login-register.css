@@ -16,7 +16,7 @@ img{
 form{
 	display: flex;
 	flex-direction: column;
-	margin: 1em;
+	margin: 0;
 	width: 18rem;
 	align-items: center;
 }
@@ -26,13 +26,25 @@ form{
 		flex-direction: row;
 		position: absolute;
 		left: 50%;
-    	margin-right: -50%;
-    	transform: translate(-50%, -50%);
-    	top: 25rem;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		top: 25rem;
+		height: 40vh;
 	}
-	.divisoria{
+	form{
+		height: 40vh;
+		padding-top: 50px;
+	}
+	.divider{
 		width: .1rem;
-		height: 20rem;
+		height: 30vh;
 		background-color: #000;
+		margin: 0 10px 0 10px;
+	}
+
+	form .btn{
+		position: absolute;
+		bottom: 5vh;
+		width: 40% !important;
 	}
 }
