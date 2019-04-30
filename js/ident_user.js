@@ -1,9 +1,9 @@
-class User_logado{
+class Logado{
 	constructor(logado)
 	{
-		this.user_log = logado;
+     	this.logado = logado;
 	}
 	salvar(){
-		localStorage.setItem('logado',this.logado);
+		localStorage.setItem("logado",this.logado)
 	}
 }
