@@ -7,33 +7,24 @@
 	<link rel="stylesheet" type="text/css" href="estilo/login-register.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<section class="login">
-		<img class="logo" alt="QuimicaEZ" src="img/title.png"></img>
-		<form class="forms">
-			<label for="nome">Nome</label>
-			<input class="boxtxt" type="text" id="nome">
-			<label for="senha">Senha</label>
-			<input class="boxtxt" type="password" id="senha">
-			<div class="body-down">
-				<button class="butao" id="diferente" onclick="login()">Entrar</button>
-			</div>
+	<img class="logo" alt="QuimicaEZ" src="img/title.png"></img>
+	<section class="login-register">
+		<form>
+			<h2>Entrar!</h2>
+			<input type="text" class="form-control p-2" id="nome" placeholder="Nome" >
+			<input type="text" class="form-control p-2" id="senha" placeholder="Senha" >
+			<button class="btn btn-warning w-100">Entrar</button>
 		</form>
-	</section>
-	<section class="register">
-		<img class="logo" alt="QuimicaEZ" src="img/title.png"></img>
-		<form class="forms">
-			<label for="nome">Nome</label>
-			<input class="boxtxt" type="text" id="nome">
-			<label for="senha">Senha</label>
-			<input class="boxtxt" type="password" id="senha">
-			<label for="c_senha">Confirmar Senha</label>
-			<input class="boxtxt" type="password" id="c_senha">
-			<div class="body-down">
-				<button class="butao" onclick="cadastro()">Cadastrar</button>
-				<a class="ancora" href="login.html">Já tenho uma conta</a>
-			</div>
+		<div class="divisoria"></div>
+		<form>
+			<h2>Cadastrar!</h2>
+			<input type="text" class="form-control p-2" id="nome" placeholder="Nome" >
+			<input type="text" class="form-control p-2" id="senha" placeholder="Senha" >
+			<input type="text" class="form-control p-2" id="c_senha" placeholder="Confirmar Senha" >
+			<button class="btn btn-warning w-100">Cadastrar</button>
 		</form>
 	</section>
 </body>
