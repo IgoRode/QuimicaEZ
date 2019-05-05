@@ -1,0 +1,12 @@
+header{
+	height: 5rem;
+	border:solid 5px red;
+	display: flex;
+	align-items: center;
+}
+header .logo{
+	height: 3.5rem;
+	width: auto;
+	display: flex;
+	justify-content: flex-end;
+}
