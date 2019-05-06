@@ -1,9 +1,28 @@
 @media screen and (min-width: 992px) {
-	.nav_lateral{
+	header{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 15vh;
+		padding:.5rem 0 .5rem 0;
+		background-color: rgba(243, 156, 18,.8);
+	}
+	header .logo{
+		width: 15vw;
+		height: auto;
+	}
+	.nav-lateral{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		justify-content: space-between;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		background-color: rgba(243, 156, 18,1.0);
 	}
 	.icons{
 		width:5rem;
