@@ -2,21 +2,36 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 8rem 1rem 0 1rem;
 }
 .jtxt{
 	text-align: center;
 	font-size: 1rem;
 }
-
+.caixalaranja{
+	width: 90vw;
+	height: 60vh;
+	background-color: rgba(243, 156, 18,.8);
+	border: solid .1em #000;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 8rem 1rem 0 1rem;
+}
+.jtxt,.butao,.logo{
+	margin: 2vh;
+}
 @media screen and (min-width: 992px) {
-	.facepage{
-		margin: 12rem 1rem 0 1rem;
+	.caixalaranja{
+		margin: 15rem 1rem 0 1rem;
+		height: 50vh;
+		width: 75vw;
 	}
   	.jtxt{
   		font-size: 1.5rem;
   	}
-  	.butao{
+  	.button{
   		font-size: 1.2rem;
   		text-align:center;
   		width: 10rem;

@@ -16,13 +16,14 @@ body{
 	width: 40vh;
 	height: auto;
 }
-.butao{
-	background-color: #EE5A24;
+.button{
+	background-color: rgba(76, 209, 55,1.0);
 	padding: .4rem;
 	border-radius: .5rem;
 	color: #000;
 	text-decoration: none;
 	font-size: 1rem;
+	border: solid 1px #000;
 }
 .ancora{
 	color: #000;
