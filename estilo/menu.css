@@ -1,30 +1,12 @@
-header{
-	height: 5rem;
-	border:solid 5px red;
-	display: flex;
-	align-items: center;
-}
-header .logo{
-	height: 3.5rem;
-	width: auto;
-	display: flex;
-	justify-content: flex-end;
-=======
-	background-color:rgba(230, 126, 34,.8); 
-}
-.logo{
-	width:10rem;
-	display: block;
-	margin-left:auto;
-	margin-right: auto;
-}
-.barra1,.barra2,.barra3{
-	width: 35px;
-  	height: 5px;
-  	background-color: #333;
-  	margin: 6px 0;
-  	transition: 0.4s;
-}
 @media screen and (min-width: 992px) {
-	
+	.nav_lateral{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+	}
+	.icons{
+		width:5rem;
+		height: auto;
+	}
 }
