@@ -5,34 +5,33 @@ body{
 @media screen and (min-width: 992px) {
 	header{
 		position: absolute;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		height: 8rem;
+		width: 100vw;
+		height: 64px;
 		background-color: rgba(39, 60, 117,.6);/*sem cor definida */
 	}
 	.logo{
-		width: 10vw;
-		height: auto;
-		position: absolute;
-   		left:45%;
-   		top:15%;
+		width: auto;
+		height: 64px;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.nav-lateral{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		justify-content: space-between;
 		position: absolute;
 		left: 0;
-		height: 100%;
+		top: 64px;
+		height: calc(100vh - 64px);
+		width: 64px;
 		padding-left: 1rem;
 		padding-right: 1rem;
 		background-color: rgba(39, 60, 117,.6);/*sem cor definida */
 	}
 	.icons{
-		width:5rem;
-		height: auto;
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 	.cards_position{
 		width: 20rem;
