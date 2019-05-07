@@ -1,7 +1,7 @@
 function cadastro() {
-	var user = document.getElementById('nome').value;
-	var senha = document.getElementById('senha').value;
-	var conf_senha = document.getElementById('c_senha').value;
+	var user = document.getElementById('new_user').value;
+	var senha = document.getElementById('new_pass').value;
+	var conf_senha = document.getElementById('new_pass_confirmation').value;
 	var nivel = 0;
 	var score = 0;
 	var usuario = new User(user, senha, nivel, score);
@@ -9,6 +9,12 @@ function cadastro() {
 
 	if (senha == conf_senha) {
 		bd.inserir(usuario);
+    	var logado = user; 
+    	var log = new Logado(logado);
+    	var lga = log.salvar();
+		document.getElementById('new_user').value = "";
+		document.getElementById('new_pass').value = "";
+		document.getElementById('new_pass_confirmation').value = "";
 		window.location.href = 'menu.html';
 	} else {
 		alert("As senhas não correspondem");
@@ -34,5 +40,7 @@ function login() {
 		var log = new Logado(logado);
 		var lga = log.salvar();
 		alert("Deu certo graças a Deus");
+		document.getElementById('user').value = "";
+		document.getElementById('password').value = "";
 	}
 }
