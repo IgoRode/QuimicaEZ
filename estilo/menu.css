@@ -1,50 +1,57 @@
 body{
-	background:url('https://www.gulfcoast.edu/images/chemistry-2.jpg')no-repeat center center fixed;
+	background:url('../img/teste2.png')no-repeat center center fixed;
 	background-size: cover;
 }
-@media screen and (min-width: 992px) {
-	header{
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		height: 8rem;
-		background-color: rgba(39, 60, 117,.6);/*sem cor definida */
-	}
-	.logo{
-		width: 10vw;
-		height: auto;
-		position: absolute;
-   		left:45%;
-   		top:15%;
-	}
-	.nav-lateral{
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		justify-content: space-between;
-		position: absolute;
-		left: 0;
-		height: 100%;
-		padding-left: 1rem;
-		padding-right: 1rem;
-		background-color: rgba(39, 60, 117,.6);/*sem cor definida */
-	}
-	.icons{
-		width:5rem;
-		height: auto;
-	}
-	.cards_position{
-		width: 20rem;
-		height: auto;
-	}
-	.linha{
-		display: flex;
-		flex-direction: row;
-		width: 60%;
-		justify-content: space-between;
-		position: absolute;
-		right: 20%;
-		top: 25%;
-	}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	height: 60px;
+	background-color: rgba(230,125,0,.9);
+}
+.nav-lateral{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0;
+	top: 60px;
+	height:calc(100vh - 60px);
+	width: 60px;
+	justify-content: space-between;
+	background-color: rgba(230,125,0,.9);
+}
+.espaço_util{
+	width: calc(100vw - 60px);
+	height: calc(100vh - 60px);
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+.logo{
+	width: auto;
+	height: 60px;
+}
+.icons{
+	width: auto;
+	height: 60px;
+}
+.meucard{
+	width:20rem;
+	height: 25rem;
+	background-color:#ecf0f1; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	border-radius: 1rem;
+}
+.linha{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: 5rem;
 }
