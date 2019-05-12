@@ -3,13 +3,12 @@ body{
 	background-size: cover;
 }
 header{
-	position: fixed;
-	top: 0;
 	width: 100%;
 	height: auto;
 	display: flex;
 	text-align: center;
 	background-color: rgba(230,125,0,.9);
+	padding: .5rem;
 }
 .logo{
 	width: auto;
@@ -18,53 +17,16 @@ header{
 .nav-itens{
 	width: auto;
 	height: 40px;
-	margin:5vh 2vw 0vh 2vw;
+	margin:2vh 3vw 0vh 3vw;
 }
 .nav-itens:hover {
 	transition: .2s;
 	transform: scale(1.3);
 	border-bottom: solid .1em black;
 }
-
-
-
-
-
-/*
-header{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: flex;
-	text-align: center;
-	height: 60px;
-	background-color: rgba(230,125,0,.9);
-}
-.nav-lateral{
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	left: 0;
-	top: 60px;
-	height:calc(100vh - 60px);
-	width: 60px;
-	justify-content: space-between;
-	background-color: rgba(230,125,0,.9);
-}
 .espaço_util{
-	width: calc(100vw - 60px);
-	height: calc(100vh - 60px);
-	position: absolute;
-	top: 60px;
-	left: 60px;
-}
-.logo{
-	width: auto;
-	height: 60px;
-}
-.icons{
-	width: auto;
-	height: 60px;
+	width: 60%;
+	margin: 10vh auto;
 }
 .meucard{
 	width:20rem;
@@ -79,7 +41,5 @@ header{
 }
 .linha{
 	display: flex;
-	width: 80%;
 	justify-content: space-between;
-	margin: 5rem;
-}*/
+}
