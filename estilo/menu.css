@@ -1,75 +1,34 @@
 header{
-		width: 100%;
-		height: auto;
-		display: flex;
-		text-align: center;
-		background-color:rgba(243, 156, 18,.9);
-		padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0;
+	width: 200px;
+	height: 100vh;
+	border:solid red 1px;
 }
 .logo{
 	width: auto;
 	height: 5rem;
+	display: flex;
+	margin:1em 0 1em 0;
+}
+nav{
+	border-top:solid red 1px;
 }
 .nav-itens{
 	width: auto;
-	height: 25px;
-	margin:2vh 3vw 0vh 3vw;
+	height: 50px;
+	display: flex;
 }
-.meucard{
-		width:80%;
-		height: auto;
-		background-color:#ecf0f1; 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		box-sizing: border-box;
-		border-radius: 1rem;
-		padding-bottom: .5rem;
-		margin-bottom: 2rem;
-	}
-.espaço_util{
-	width: 100%;
-	margin: 10vh auto;
+ul{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
-@media screen and (min-width: 992px) {
-	.logo{
-		width: auto;
-		height: 8rem;
-	}
-	.nav-itens{
-		width: auto;
-		height: 40px;
-		margin:2vh 3vw 0vh 3vw;
-	}
-	.nav-itens:hover {
-		transition: .2s;
-		transform: scale(1.3);
-		border-bottom: solid .1em black;
-	}
-	.espaço_util{
-		width: 60%;
-		margin: 10vh auto;
-	}
-	.meucard{
-		width:22rem;
-		height: 30rem;
-		background-color:#ecf0f1; 
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		text-align: center;
-		box-sizing: border-box;
-		border-radius: 1rem;
-		padding-bottom: .5rem;
-	}
-	.linha{
-		margin: 5vh 0 0 0;
-		display: flex;
-		justify-content: space-between;
-	}
+li{
+	display: flex;
+}
+li p{
+	position: relative;
+	bottom: 0;
 }
