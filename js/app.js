@@ -39,7 +39,7 @@ function login() {
 		var logado = document.getElementById("user").value;
 		var log = new Logado(logado);
 		var lga = log.salvar();
-		alert("Deu certo graças a Deus");
+		window.location.href = 'menu.html';
 		document.getElementById('user').value = "";
 		document.getElementById('password').value = "";
 	}
