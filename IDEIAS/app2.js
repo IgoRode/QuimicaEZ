@@ -1,63 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Jogo da memória</title>
-	<meta charset="utf-8">
-</head>
-<style type="text/css">
-	img{
-		height: 100px;
-		width: 100px;
-		padding: 20px;
-	}
-</style>
-<body onload="inicio()">
-	<nav>
-		<h1>Jogo da memória</h1>
-	</nav>
-
-	<section id="imagens">
-		
-
-
-
-
-	</section>
-
-</body>
-<script type="text/javascript">
 var vetor = [];
-var vetor1 = [];
+var vetor2 = [];
 var win = 0;
-var numeros1 = []
-var numeros2 = []
-function aleatorio()
-{
-	var min=8;
+var i;
+var numeros1 = [];
+var numeros2 = [];
+
+function aleatorio() {
+	var total_imagens = 6;
 	var numAtual = 0;
-	for (i = 0; i < min; i++){
-		numAtual = Math.floor(Math.random() * 8+1);
-		if(numAtual != 0){
-			while(numeros1.indexOf(numAtual) !=-1 && numAtual!=0){
-			numAtual = Math.floor(Math.random() * 8+1);
-			//window.alert("O número sorteado foi "+numAtual);
+	for (i = 0; i < total_imagens; i++){
+		numAtual = Math.floor(Math.random()* 6+1);
+		if (numAtual !=0) {
+			while(numeros1.indexOf(numAtual) != && numAtual!=0){
+				numAtual = Math.floor(Math.random() * 8+1);
 			}
 			numeros1.push(numAtual);
 		}
 	}
-	for (i = 0; i < min; i++){
-		numAtual = Math.floor(Math.random() * 8+1);
-		if(numAtual != 0){
+	for (i = 0; i < total_imagens; i++){
+		numAtual = Math.floor(Math.random()* 6+1);
+		if (numAtual != 0) {
 			while(numeros2.indexOf(numAtual) !=-1 && numAtual!=0){
-			numAtual = Math.floor(Math.random() * 8+1);
-			//window.alert("O número sorteado foi "+numAtual);
+			numAtual = Math.floor(Math.random()* 6+1);	
 			}
 			numeros2.push(numAtual);
-
 		}
 	}
 	vetor = numeros1.concat(numeros2);
-	numeros2 = numeros1.concat(numeros2);
+	numeros2 = numeros1.concat(numero2);
 }
 function colocar()
 {
@@ -133,20 +103,18 @@ function virar(op)
 	
 }
 
-function inicio()
-{
+
+function inicio() {
 	aleatorio();
-	for(var i=0;i<16;i++)
+	for(i = 0; i < 12; i++)
 	{
-		comeco = ("<img src='imagens/geral.jpg' height='120' width='120' id='"+i+"' onclick='virar("+i+")'/>");
-		if(i == 3 || i == 7 || i==11)
+		comeco = ("<img src='geral.jpg' height='120' width='120' id='"+i+"' onclick='virar("+i+")'/>");
+		if (i == 3 || i == 7 || i == 11)
 		{
 			comeco +="<br>"
 		}
-		vetor1[i] = (comeco);
+		vetor[i] = (comeco);	
 	}
 	colocar();
 	sorteio();
 }
-</script>
-</html>
