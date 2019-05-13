@@ -42,5 +42,11 @@ function login() {
 		window.location.href = 'menu.html';
 		document.getElementById('user').value = "";
 		document.getElementById('password').value = "";
+	}else {
+		alert('Usuario não cadastrado.')
+		alert('Se Cadastre.')
+		document.getElementById("user").value = "";
+		document.getElementById("password").value = "";
+		document.getElementById("new_user").focus();
 	}
 }
