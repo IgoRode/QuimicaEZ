@@ -1,3 +1,31 @@
+.meucard{
+	width:80%;
+	height: auto;
+	background-color:#ecf0f1; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 1rem;
+	padding-bottom: .5rem;
+	margin: 0 2vw 2vw 0;
+}
+.linha{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.logo{
+	width: auto;
+	height: 5rem;
+	display: flex;
+	margin:1em 0 1em 0;
+}
+@media screen and (min-width: 992px) {
 header{
 	display: flex;
 	flex-direction: column;
@@ -43,6 +71,7 @@ h2{
 	height: auto;
 	position: absolute;
 	left: 250px;
+	align-items: center;
 }
 .meucard{
 	width:20rem;
@@ -79,4 +108,5 @@ h2{
 .txt-desc p{
 	font-weight: bold;
 	font-size: 1.1rem;
+}
 }
