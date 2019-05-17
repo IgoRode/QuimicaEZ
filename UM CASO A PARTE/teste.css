@@ -1,0 +1,19 @@
+header{
+	border:solid 1px black;
+	position: absolute;
+	height: !important 100vh;
+	left: 0;
+}
+nav{
+	border:solid 1px black;
+	height:100vh;
+	left: 0;
+	position: absolute;
+}
+nav h2{
+	font-size: 1.5rem;
+}
+.img-header{
+	width: auto;
+	height: 10vh;
+}
