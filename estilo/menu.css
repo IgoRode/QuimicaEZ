@@ -50,9 +50,24 @@ nav{
 	font-weight: bold;
 	font-size: 2rem;
 }*/
-
+main{
+	position: absolute;
+	top: 0;
+	left: 200px;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+.cartao{
+	height: 50vh;
+	width: 20vw;
+	margin: 2em;
+}
 @media screen and (min-width: 992px){
 	header{
 		left: 0;
+	}
+	main{
+		width: calc(100vw - 200px);
 	}
 }
