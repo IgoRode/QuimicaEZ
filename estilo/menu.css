@@ -1,4 +1,4 @@
-header{
+.navegation, #menu{
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -8,18 +8,6 @@ header{
 	background-color:rgba(243, 156, 18,.7);
 	width: 200px;
 	overflow: hidden;
-	left: -200px;/*OLHA PARA CÁ MINITO #NAO ME ESQUECE*/
-	/*-webkit-transform:translateX(0);
-	transform:translateX(0);
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
-	-webkit-backface-visibility:hidden;
-	backface-visibility:hidden;*/
-}
-nav{
-	display: flex;
-	flex-direction: column;
-	padding-bottom:.8rem;
 }
 /*.show-header{
 	left: 0;
@@ -62,6 +50,10 @@ main{
 	height: 50vh;
 	width: 20vw;
 	margin: 2em;
+}
+.active{
+	width: 100%;
+	background-color: none;
 }
 @media screen and (min-width: 992px){
 	header{
