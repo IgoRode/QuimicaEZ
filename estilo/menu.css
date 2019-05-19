@@ -1,65 +1,105 @@
-.navegation, #menu{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	left: 0;
-	height: 100vh;
-	padding: .5rem;
-	background-color:rgba(243, 156, 18,.7);
-	width: 200px;
-	overflow: hidden;
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
-/*.show-header{
-	left: 0;
-	-webkit-transition:300ms ease all;
-	transition:300ms ease all;
-}*/
+#layout {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    background-color: #fff;
+}
+    #layout.active #menu {
+        left: 250px;
+        width: 250px;
+    }
+
+    #layout.active .menu-link {
+        left: 250px;
+    }
+
+#menu {
+    margin-left: -250px; /* "#menu" width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background-color: rgba(243, 156, 18,.9);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 25px;
+}
+
+
+/*BOTAO QUE ATIVA*/
+
+
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 156, 18,.9);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+
+/*PARA TELAS MAIORES*/
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 250px;
+    }
+}
+
+@media (min-width: 48em) {
+   #layout {
+        padding-left: 250px; /* left col width "#menu" */
+        left: 0;
+    }
+    #menu {
+        left: 250px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 250px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 250px;
+    }
+}
+
 .p-header{
 	font-size: 1.5em;
 }
 .img-header{
-	width: 180px;
+	width: 150px;
 	height: auto;
 	margin-bottom: 1rem;
 }
 .divider{
-	width:90%;
+	width:100%;
 	height: 1px;
 	background-color: #000;
 	margin-top:1rem; 
 	margin-bottom:1rem;
-}
-/*.sumiu{
-	display: none;
-}
-.btn-open{
-	top:0;
-	position: absolute;
-	font-weight: bold;
-	font-size: 2rem;
-}*/
-main{
-	position: absolute;
-	top: 0;
-	left: 200px;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-}
-.cartao{
-	height: 50vh;
-	width: 20vw;
-	margin: 2em;
-}
-.active{
-	width: 100%;
-	background-color: none;
-}
-@media screen and (min-width: 992px){
-	header{
-		left: 0;
-	}
-	main{
-		width: calc(100vw - 200px);
-	}
 }
