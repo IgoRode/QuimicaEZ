@@ -1,5 +1,6 @@
 #layout,
 #menu,
+.active,
 .menu-link {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -9,17 +10,18 @@
 }
 #layout {
     position: relative;
-    left: 0;
+    left: -250px;
     padding-left: 0;
     background-color: #fff;
 }
     #layout.active #menu {
         left: 250px;
-        width: 250px;
+        width: 180px;
     }
 
     #layout.active .menu-link {
-        left: 250px;
+    	position: absolute;
+        left: 300px;
     }
 
 #menu {
@@ -37,38 +39,31 @@
 
 
 /*BOTAO QUE ATIVA*/
-
-
-.menu-link {
-    position: fixed;
-    display: block; /* show this only on small screens */
-    top: 0;
-    left: 0;
-    background-color: rgba(243, 156, 18,.9);
-    font-size: 10px; /* change this value to increase/decrease button size */
-    z-index: 10;
-    width: 2em;
-    height: auto;
-    padding: 2.1em 1.6em;
+.active{
+	left: 230px;
 }
 
-
+.menu-link {
+    position: absolute;
+    display: block; /* show this only on small screens */
+    top: 0;
+    z-index: 10;
+    width: 2em;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 /*PARA TELAS MAIORES*/
 
-@media (max-width: 48em) {
-    /* Only apply this when the window is small. Otherwise, the following
-    case results in extra padding on the left:
-        * Make the window small.
-        * Tap the menu to trigger the active state.
-        * Make the window large again.
-    */
+@media (max-width: 800px) {
     #layout.active {
         position: relative;
         left: 250px;
     }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 800px) {
    #layout {
         padding-left: 250px; /* left col width "#menu" */
         left: 0;
@@ -76,15 +71,18 @@
     #menu {
         left: 250px;
     }
-
     .menu-link {
-        position: fixed;
-        left: 250px;
+        position: relative;
+        left:275px;
         display: none;
     }
-
+    #menu-link{
+    	position: absolute;
+        left: 275px;
+    }
     #layout.active .menu-link {
-        left: 250px;
+    	position: absolute;
+        left: 275px;
     }
 }
 
@@ -92,7 +90,7 @@
 	font-size: 1.5em;
 }
 .img-header{
-	width: 150px;
+	width: 180px;
 	height: auto;
 	margin-bottom: 1rem;
 }
@@ -102,4 +100,16 @@
 	background-color: #000;
 	margin-top:1rem; 
 	margin-bottom:1rem;
+}
+.in-burger{
+	width:100%;
+	height: 3px;
+	background-color: #000;
+}
+.especial{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ul,li{
+	list-style: none;
 }
