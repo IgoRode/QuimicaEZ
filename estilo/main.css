@@ -3,7 +3,7 @@
 	margin: 0;
 }
 html,body{
-	font-family: 'Karla', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 body{
 	background:url('../img/behind.jpg')no-repeat center center fixed;
@@ -14,7 +14,7 @@ body{
 }
 .logo{
 	width: auto;
-	height:5rem;
+	height:150px;
 }
 .button{
 	background-color: #28a745;
