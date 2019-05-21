@@ -3,7 +3,7 @@
 	margin: 0;
 }
 html,body{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 body{
 	background:url('../img/behind.jpg')no-repeat center center fixed;
@@ -14,7 +14,7 @@ body{
 }
 .logo{
 	width: auto;
-	height:150px;
+	height:180px;
 }
 .button{
 	background-color: #28a745;

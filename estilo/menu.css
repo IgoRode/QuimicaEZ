@@ -18,7 +18,7 @@
 }
     #layout.active #menu {
         left: 250px;
-        width: 180px;
+        width: 225px;
     }
 
     #layout.active .menu-link {
@@ -85,40 +85,62 @@ ul,li{
 }
 /*MAIN*/
 main{
+	padding-top: 60px;
 	display: flex;
-	margin: 60px auto;
+	margin: 0 auto;
 	flex-direction: column;
 	text-align: center;
+	align-items: center;
 }
 .logo{
 	height: 100px;
 	display: flex;
 	margin: 0 auto;
 }
+.c-title{
+	text-align: center;
+	margin: 50px auto;
+}
 .p-main{
-	font-size: 1.1rem;
-	font-weight: bold;
-	margin: 0 auto;
-	width: 90%;
+	font-size: 1.3rem;
+	margin: 50px auto;
 }
 .caixa-l{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: rgba(243, 156, 18,.8);
-	padding: 2rem;
+	padding-top: .3rem;
+	padding-bottom:.3rem;
 	border: solid .1em black;
 	border-radius: 1rem;
-	width: 80%;
-	margin: 0 auto;
+	margin: 50px auto;
+	text-align: inherit;
+	width: 90%;
 }
-.meu-card{
-	background-color: #ecf0f1;
+.c-part{
 	display: flex;
-	flex-direction: column;
-	border: solid .1em black;
+	flex-direction: row;
+	flex: 1;
+	margin: 60px auto;
 }
-/*PARA PC E NOT's*/
+.conteudo{
+	background-color:#dcdde1;
+	border-radius: 1rem;
+	margin: 20px auto;
+}
+.conteudo-img{
+	width: 25%;
+}
+.desc{
+	width: 45%;
+}
+figure.figura{
+	display: flex;
+	height: 200px;
+	margin: 2rem auto;
+	width: 50vw;
+}
 @media (min-width: 800px) {
 	#layout.active {
         position: relative;
@@ -130,7 +152,7 @@ main{
 		width: calc(100vw - 250px);
 	}
 	#layout {
-        padding-left: 250px; /* left col width "#menu" */
+        padding-left: 250px;
         left: 0;
     }
     #menu {
@@ -148,5 +170,9 @@ main{
     #layout.active .menu-link {
     	position: absolute;
         left: 275px;
+    }
+    .caixa-l{
+    	width: 80%;
+    	background-color: #f39c12;
     }
 }
