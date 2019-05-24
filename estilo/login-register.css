@@ -1,3 +1,10 @@
+body{
+	background:url('../img/behind.jpg')no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 img{
 	margin-top: 1em;
 	display: block;
@@ -8,10 +15,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*background-color: rgba(243, 156, 18,.8);
-	padding: 2rem;
-	border: solid .1em black;
-	border-radius: 1rem;*/
+	margin: 30px auto;
 }
 form{
 	display: flex;
@@ -21,7 +25,7 @@ form{
 	height: 45vh;
 	align-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
 	.login-register{
 		display: flex;
 		flex-direction: row;
@@ -30,22 +34,26 @@ form{
 		margin-right: -50%;
 		transform: translate(-50%, -50%);
 		top: 25rem;
-		height: 40vh;
+		height:400px;
+		background-color: rgba(243, 156, 18,.8);
+		padding: 2rem;
+		border: solid .1em black;
+		border-radius: 1rem;
 	}
 	form{
-		height: 40vh;
+		height: 350px;
 		padding-top: 50px;
 	}
 	.divider{
 		width: .1rem;
-		height: 30vh;
+		height: 300px;
 		background-color: #000;
-		margin: 0 10px 0 10px;
+		margin: 0 30px 0 30px;
 	}
 
 	form .btn{
 		position: absolute;
-		bottom: 5vh;
+		bottom:50px;
 		width: 40% !important;
 	}
 }
