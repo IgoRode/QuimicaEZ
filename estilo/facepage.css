@@ -16,12 +16,16 @@
     margin-right: -50%;
    	transform: translate(-50%, -50%) 
 }
-img,a,p{
+img,a{
 	margin: 1rem;
 }
 img.logo{
 	height: 110px;
 	width: auto;
+}
+a{
+	transform: rotate(90deg);
+	font-size: 3em;
 }
 @media screen and (min-width:800px) {
   	img.logo{
