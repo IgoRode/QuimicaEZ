@@ -6,7 +6,15 @@
 	background-size: cover;
 	height: 100vh;
 }
-.imgFULL{
+.baixo{
+	background: url(https://miro.medium.com/max/3840/1*GzmpuFKW_HmtYUwEx4Z2Ow.png)no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+}
+.parte1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,10 +30,6 @@ img,a{
 img.logo{
 	height: 110px;
 	width: auto;
-}
-a{
-	transform: rotate(90deg);
-	font-size: 3em;
 }
 @media screen and (min-width:800px) {
   	img.logo{
