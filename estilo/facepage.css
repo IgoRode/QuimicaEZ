@@ -1,29 +1,27 @@
-.facepage{
+.part1{
 	background:url('../img/behind.jpg')no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
 }
-.baixo{
-	background: url(https://miro.medium.com/max/3840/1*GzmpuFKW_HmtYUwEx4Z2Ow.png)no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100vh;
-}
-.parte1{
+.conteudo1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-   	transform: translate(-50%, -50%) 
+	top: 35%;
+} 
+.part2{
+	background-color: #ff9f43;
+	height: 100vh;
+	width: 100vw;
 }
+
+/*em fase de decisao*/
 img,a{
 	margin: 1rem;
 }
