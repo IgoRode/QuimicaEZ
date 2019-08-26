@@ -1,27 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
+
 *{
 	padding: 0;
 	margin: 0;
-}
-.logo{
-	width: auto;
-	height:150px;
-}
-.button{
-	background-color: #28a745;
-	padding: .4rem;
-	border-radius: .5rem;
-	color: #fff;
-	text-decoration: none;
-	font-size: 1rem;
-	text-decoration: none;
-}
-.ancora{
-	color: #000;
-	text-decoration: none;
-	font-size: 1rem;
+	font-family: 'Poiret One', cursive;
 }
 .icons{
 	width: auto;
 	height: 10vh;
+}
+footer{
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	height: 100px;
+	background-color: #7f8c8d;
+	border-radius: 10px;
 }

@@ -1,10 +1,7 @@
 html,body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Hepta Slab', serif;
-}
-.intro{
-	top: 0;
+	font-family: 'Poiret One', cursive;
 	height: 100vh;
 	background:url('../img/behind.jpg')no-repeat center center;
 	-webkit-background-size: cover;
@@ -12,33 +9,23 @@ html,body{
 	-o-background-size: cover;
 	background-size: cover;
 }
-header{
-	position:relative;
+.intro{
+	height: 100vh;
 }
-.logo{
-	width: 200px;
-	height: auto;
-	position:absolute;
-	right:0;
-	margin: 1rem;
-}
-.intro div h1,h2{
-	margin: 1.5rem;
-	color:#000;
-}
-.intro div h2{
-	font-size: 20px;
-}
-.intro div{
+.txt{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	justify-content: center;
-	position: absolute;
-   	top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+}
+.txt h2{
+	font-size: 25px;
+	width: 80vw;
+}
+.logo{
+	margin-top: 40vh;
+	width: 250px;
+	height: auto;
 }
 main{
 	height: 100vh;
@@ -60,25 +47,21 @@ main{
 	margin: 25px;
 }
 .icones{
+	display: flex;
 	width: auto;
 	height: 180px;
 }
 .desc-item{
 	text-align: justify;
 }
-footer{
-	display: flex;
-	align-items: center;
-	padding: 2rem;
-	height: 100px;
-	background-color: #7f8c8d;
-}
 .btn{
-    font-family: 'Oswald', sans-serif;
-    color: black;
+    color: #000;
     font-size: 25px;
+    font-weight: bold;
     padding: 10px 30px;
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.8s;
+    border:solid 2px #000;
+    border-radius: 5px;
 }
