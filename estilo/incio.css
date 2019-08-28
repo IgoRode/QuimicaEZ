@@ -1,0 +1,35 @@
+body{
+  background-color: #f39c12;
+}
+.logo{
+  width: auto;
+  height:50px;
+}
+#menu{
+  margin: 0 auto;
+  width: 50%;
+}
+#menu li{
+  margin: 0 auto;
+  width: 20%
+}
+
+.texto-main h1{
+  margin-bottom: 50px;
+}
+.texto-main{
+  text-align: justify;
+  margin: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jumbotron{
+  height: 300px;
+	background-image: url(../img/teste2.jpg);
+	background-size: cover;
+	background-position: center;
+}
