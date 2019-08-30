@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QuimicaEz</title>
+        <style media="screen">
+        progress[value] {
+          -webkit-appearance: none;
+          appearance: none;
+
+        width: 250px;
+        height: 20px;
+        }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+
+      <progress id="barra" max="100">0%</progress>
+      <button type="button" name="button" onclick="sla()">sla</button>
+    </body>
+    <script type="text/javascript">
+      function sla() {
+          var valor = document.getElementById('barra').value;
+          valor = valor + 10;
+          document.getElementById('barra').value = valor;
+      }
+    </script>
+</html>
