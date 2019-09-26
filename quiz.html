@@ -3,27 +3,219 @@
     <head>
         <meta charset="utf-8">
         <title>QuimicaEz</title>
-        <style media="screen">
-        progress[value] {
-          -webkit-appearance: none;
-          appearance: none;
-
-        width: 250px;
-        height: 20px;
-        }
-        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="estilo/incio.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
 
-      <progress id="barra" max="100">0%</progress>
-      <button type="button" name="button" onclick="sla()">sla</button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+  			<div class="container">
+  				<a class="navbar-brand" href="#"><img class="logo" src="./img/title.png" alt="logo do site"></a>
+  				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupporttedContent">Menu</button>
+  				<div class="collapse navbar-collapse menu" id="navbarSupporttedContent">
+  					<ul class="navbar-nav mr-auto" id="menu">
+  						<li><a class="nav-link" href="index.html">Inicio</a></li>
+  						<li><a class="nav-link" href="#">Videos Aulas</a></li>
+  						<li><a class="nav-link" href="#">Sobre</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+
+      <main>
+        <section class="jumbotron">
+  			<div class="container">
+  			</div>
+  			</section>
+
+        <div class="texto-main">
+          <h1>Bem vindo ao Quiz</h1>
+        </div>
+    
+
+        <div id="quiz" class="quiz">
+          <h3>Questão 1</h3>
+          <p>Qual a o valor da operação 2x4</p>
+          <div id="botons" class="botons">
+          <button onclick="resposta1(2)">2</button>
+          <button onclick="resposta1(4)">4</button>
+          <button onclick="resposta1(6)">6</button>
+          <button onclick="resposta1(8)">8</button>
+          </div>
+          <p id="id_resposta"></p>
+        </div> 
+
+        <div id="quiz2" class="invisivel">
+          <h3>Questão 2</h3>
+          <p>Qual a o valor da operação 2x2</p>
+          <div id="botons2" class="botons">
+          <button onclick="resposta2(2)">2</button>
+          <button onclick="resposta2(4)">4</button>
+          <button onclick="resposta2(6)">6</button>
+          <button onclick="resposta2(8)">8</button>
+          </div>
+          <p id="id_resposta2"></p>
+        </div> 
+
+        <div id="quiz3" class="invisivel">
+          <h3>Questão 3</h3>
+          <p>Qual a o valor da operação 2x3</p>
+          <div id="botons3" class="botons">
+          <button onclick="resposta3(2)">2</button>
+          <button onclick="resposta3(4)">4</button>
+          <button onclick="resposta3(6)">6</button>
+          <button onclick="resposta3(8)">8</button>
+          </div>
+          <p id="id_resposta3"></p>
+        </div> 
+
+
+        <div id="quiz4" class="invisivel">
+          <h3>Questão 4</h3>
+          <p>Qual a o valor da operação 2x5</p>
+          <div id="botons4" class="botons">
+          <button onclick="resposta4(2)">2</button>
+          <button onclick="resposta4(10)">10</button>
+          <button onclick="resposta4(6)">6</button>
+          <button onclick="resposta4(8)">8</button>
+          </div>
+          <p id="id_resposta4"></p>
+        </div>
+
+
+
+
+        <div id="quiz5" class="invisivel">
+          <h3>Questão 5</h3>
+          <p>Qual a o valor da operação 2x6</p>
+          <div id="botons5" class="botons">
+          <button onclick="resposta5(2)">2</button>
+          <button onclick="resposta5(4)">4</button>
+          <button onclick="resposta5(12)">12</button>
+          <button onclick="resposta5(8)">8</button>
+          </div>
+          <p id="id_resposta5"></p>
+        </div>
+
+
+        <div id="progres">
+        <progress value="0" id="barra" max="100">0%</progress> 
+        </div>
+            
+      </main>
+
     </body>
-    <script type="text/javascript">
-      function sla() {
-          var valor = document.getElementById('barra').value;
-          valor = valor + 10;
-          document.getElementById('barra').value = valor;
+    <script>
+
+    function resposta1(resposta) {
+      var texto;
+      texto = document.getElementById("id_resposta");
+      texto.innerHTML = " ";
+      var valor = document.getElementById('barra').value;
+      valor = valor + 20;
+      document.getElementById('barra').value = valor;
+      if (resposta==8) {
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      }else{
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
       }
+      document.getElementById("botons").className = 'invisivel';
+      document.getElementById("quiz").className = 'invisivel';
+      document.getElementById("quiz2").className = 'quiz';
+}
+
+
+function resposta2(resposta) {
+      var texto;
+      texto = document.getElementById("id_resposta2");
+      texto.innerHTML = " ";  
+      var valor = document.getElementById('barra').value;
+      valor = valor + 20;
+      document.getElementById('barra').value = valor;
+      if (resposta==4) {
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      }else{
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      }
+      document.getElementById("botons2").className = 'invisivel';
+      document.getElementById("quiz2").className = 'invisivel';
+      document.getElementById("quiz3").className = 'quiz';
+}
+
+
+function resposta3(resposta) {
+      var texto;
+      texto = document.getElementById("id_resposta3");
+      texto.innerHTML = " ";  
+      var valor = document.getElementById('barra').value;
+      valor = valor + 20;
+      document.getElementById('barra').value = valor;
+      if (resposta==6) {
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      }else{
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      }
+      document.getElementById("botons3").className = 'invisivel';
+      document.getElementById("quiz3").className = 'invisivel';
+      document.getElementById("quiz4").className = 'quiz';
+}
+
+
+function resposta4(resposta) {
+      var texto;
+      texto = document.getElementById("id_resposta4");
+      texto.innerHTML = " ";
+      var valor = document.getElementById('barra').value;
+      valor = valor + 20;
+      document.getElementById('barra').value = valor;
+      if (resposta==10) {
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      }else{
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      }
+      document.getElementById("botons4").className = 'invisivel';
+      document.getElementById("quiz4").className = 'invisivel';
+      document.getElementById("quiz5").className = 'quiz';
+}
+
+
+
+function resposta5(resposta) {
+      var texto;
+      texto = document.getElementById("id_resposta5");
+      texto.innerHTML = " ";
+      var valor = document.getElementById('barra').value;
+      valor = valor + 20;
+      document.getElementById('barra').value = valor;
+      if (resposta==12) {
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      }else{
+        texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      }
+      document.getElementById("botons5").className = 'invisivel';
+      document.getElementById("quiz").className = 'quiz'
+      document.getElementById("quiz2").className = 'quiz'
+      document.getElementById("quiz3").className = 'quiz'
+      document.getElementById("quiz4").className = 'quiz'
+      document.getElementById("quiz5").className = 'quiz'
+}
+
+
+
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
+
+
+<!-- /\<progress id="barra" max="100">0%</progress> -->
+<!-- <button type="button" name="button" onclick="sla()">sla</button> -->
+<!-- </body> -->
+<!-- <script type="text/javascript"> -->
+<!-- function sla() { -->
+    <!-- var valor = document.getElementById('barra').value; -->
+    <!-- valor = valor + 10; -->
+    <!-- document.getElementById('barra').value = valor; -->
+<!-- } -->
