@@ -1,52 +1,92 @@
-function cadastro() {
-	var user = document.getElementById('new_user').value;
-	var senha = document.getElementById('new_pass').value;
-	var conf_senha = document.getElementById('new_pass_confirmation').value;
-	var nivel = 0;
-	var score = 0;
-	var usuario = new User(user, senha, nivel, score);
-	var bd = new Banco();
-
-	if (senha == conf_senha) {
-		bd.inserir(usuario);
-    	var logado = user; 
-    	var log = new Logado(logado);
-    	var lga = log.salvar();
-		document.getElementById('new_user').value = "";
-		document.getElementById('new_pass').value = "";
-		document.getElementById('new_pass_confirmation').value = "";
-		window.location.href = 'menu.html';
-	} else {
-		alert("As senhas não correspondem");
-	}
+function resposta1(resposta) {
+    var texto;
+    texto = document.getElementById("id_resposta");
+    texto.innerHTML = " ";
+    var valor = document.getElementById('barra').value;
+    valor = valor + 20;
+    document.getElementById('barra').value = valor;
+    if (resposta==8) {
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+    }else{
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+    }
+    document.getElementById("botons").className = 'invisivel';
+    document.getElementById("quiz").className = 'invisivel';
+    document.getElementById("quiz2").className = 'quiz';
 }
 
-function login() {
-	var bancda = new Banco();
-	var vetor = bancda.listar();
-	var l;
-	var li;
-	var user = document.getElementById('user').value;
-	var senha = document.getElementById('password').value;
 
-	for (var i = 0; i < vetor.length; i++) {
-		if ((vetor[i].user == user) && (vetor[i].senha == senha)) {
-			l = 1;
-			li = i;
-		}
-	}
-	if (l == 1) {
-		var logado = document.getElementById("user").value;
-		var log = new Logado(logado);
-		var lga = log.salvar();
-		window.location.href = 'menu.html';
-		document.getElementById('user').value = "";
-		document.getElementById('password').value = "";
-	}else {
-		alert('Usuario não cadastrado.')
-		alert('Se Cadastre.')
-		document.getElementById("user").value = "";
-		document.getElementById("password").value = "";
-		document.getElementById("new_user").focus();
-	}
+function resposta2(resposta) {
+    var texto;
+    texto = document.getElementById("id_resposta2");
+    texto.innerHTML = " ";  
+    var valor = document.getElementById('barra').value;
+    valor = valor + 20;
+    document.getElementById('barra').value = valor;
+    if (resposta==4) {
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+    }else{
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+    }
+    document.getElementById("botons2").className = 'invisivel';
+    document.getElementById("quiz2").className = 'invisivel';
+    document.getElementById("quiz3").className = 'quiz';
+}
+
+
+function resposta3(resposta) {
+    var texto;
+    texto = document.getElementById("id_resposta3");
+    texto.innerHTML = " ";  
+    var valor = document.getElementById('barra').value;
+    valor = valor + 20;
+    document.getElementById('barra').value = valor;
+    if (resposta==6) {
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+    }else{
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+    }
+    document.getElementById("botons3").className = 'invisivel';
+    document.getElementById("quiz3").className = 'invisivel';
+    document.getElementById("quiz4").className = 'quiz';
+}
+
+
+function resposta4(resposta) {
+    var texto;
+    texto = document.getElementById("id_resposta4");
+    texto.innerHTML = " ";
+    var valor = document.getElementById('barra').value;
+    valor = valor + 20;
+    document.getElementById('barra').value = valor;
+    if (resposta==10) {
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+    }else{
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+    }
+    document.getElementById("botons4").className = 'invisivel';
+    document.getElementById("quiz4").className = 'invisivel';
+    document.getElementById("quiz5").className = 'quiz';
+}
+
+
+
+function resposta5(resposta) {
+    var texto;
+    texto = document.getElementById("id_resposta5");
+    texto.innerHTML = " ";
+    var valor = document.getElementById('barra').value;
+    valor = valor + 20;
+    document.getElementById('barra').value = valor;
+    if (resposta==12) {
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+    }else{
+      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+    }
+    document.getElementById("botons5").className = 'invisivel';
+    document.getElementById("quiz").className = 'quiz'
+    document.getElementById("quiz2").className = 'quiz'
+    document.getElementById("quiz3").className = 'quiz'
+    document.getElementById("quiz4").className = 'quiz'
+    document.getElementById("quiz5").className = 'quiz'
 }
