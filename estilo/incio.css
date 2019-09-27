@@ -1,5 +1,5 @@
 body{
-  background-color: #f39c12;
+	background-color: #00b894;
 }
 .logo{
   width: auto;
@@ -12,27 +12,30 @@ body{
   justify-content: center;
   align-items: center;
 }
-#nav
-{
-  
+#img{
+  margin-left: 10%
 }
 .nav li{
   margin-right: 10%;
 }
 
-.texto-main h1{
-  margin-bottom: 50px;
+.texto-main h4{
+  margin-bottom: 30px;
 }
 .texto-main{
   text-align: justify;
-  margin: 100px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-justify: inter-word;
+  text-align: center;
 }
 
+.texto-main p{
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 8vw;
+  margin-right: 8vh;
+}
 .jumbotron{
   height: 300px;
 	background-image: url(../img/teste2.svg);
@@ -49,13 +52,17 @@ main a{
   justify-content: center;
   color: black;
 }
+main a:hover{
+  opacity: 0.5;
+}
 .quiz{
+    border-radius: 10px;
+    background-color: #55efc4;
     margin-left: 10%;
     margin-bottom: 2%;
     text-align: center;
     justify-content: center;
-    border: solid 1px;
-    width: 80vw;
+    width: 83vw;
 }
 .central{
   display: flex;
@@ -76,10 +83,11 @@ main a{
   height: 05vh;
   width: 06vw;
   margin-left: 1vw;
+  margin-bottom: 2vw;
 }
 
 .quiz button:hover{
-    background:#ffbe76;
+    background:686de0;
     height: 05.5vh;
     width: 06.5vw;
 }
@@ -91,4 +99,11 @@ main a{
 
 .invisivel{
   display: none;
+}
+@media (min-width: 800px)
+{
+  .texto-main h4{
+    font-size: 50px;
+    margin-bottom: 15vh;
+  }
 }

@@ -3,7 +3,7 @@ html,body{
 	padding: 0;
 	font-family: 'Poiret One', cursive;
 	height: 100vh;
-	background:url('../img/behind.jpg')no-repeat center center;
+	background:url('../img/chemical-formula-beautiful-background-of-green-cannabis-flowers-a-picture-id940306318.jpg')no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -29,7 +29,7 @@ html,body{
 }
 main{
 	height: 100vh;
-	background-color: #f39c12;
+	background-color: #00b894;
 	display: flex;
 	align-items: center;
 	justify-content: center;
