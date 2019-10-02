@@ -12,27 +12,36 @@ body{
   justify-content: center;
   align-items: center;
 }
-#img{
-  margin-left: 10%
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img{
+  border: solid 1px;
+  border-radius: 10px;
+  border-color: black;
 }
 .nav li{
   margin-right: 10%;
 }
 .jumbotron{
     height: 300px;
-      background-image: url(../img/teste2.svg);
+      background-image: url(../img/chemical-formula-beautiful-background-of-green-cannabis-flowers-a-picture-id940306318.JPg);
       background-size: cover;
       background-position: center;
       height: 50vh;
 }
 
 .col{
+    background-color: #d2dae2;
     border: solid 1px;
     border-radius: 10px;
     color: black;
     margin-left: 1vw;
     margin-top: 2vh;
-    
+    opacity: 0.5;
 }
 .col p{
     text-align: justify;
@@ -42,4 +51,7 @@ body{
 
 .menu{
     margin-top: 20vh;
+}
+.col p{
+    text-align: justify;
 }
