@@ -1,0 +1,45 @@
+body{
+	background-color: #00b894;
+}
+.logo{
+  width: auto;
+  height:50px;
+}
+.nav{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#img{
+  margin-left: 10%
+}
+.nav li{
+  margin-right: 10%;
+}
+.jumbotron{
+    height: 300px;
+      background-image: url(../img/teste2.svg);
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+}
+
+.col{
+    border: solid 1px;
+    border-radius: 10px;
+    color: black;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    
+}
+.col p{
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: center;
+}
+
+.menu{
+    margin-top: 20vh;
+}

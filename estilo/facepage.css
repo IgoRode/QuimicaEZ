@@ -21,6 +21,7 @@ html,body{
 .txt h2{
 	font-size: 25px;
 	width: 80vw;
+	color: #ecf0f1;
 }
 .logo{
 	margin-top: 40vh;
@@ -55,13 +56,13 @@ main{
 	text-align: justify;
 }
 .btn{
-    color: #000;
+    color: #ecf0f1;;
     font-size: 25px;
     font-weight: bold;
     padding: 10px 30px;
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.8s;
-    border:solid 2px #000;
+    border:solid 2px #ecf0f1;;
     border-radius: 5px;
 }
