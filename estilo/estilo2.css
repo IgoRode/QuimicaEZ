@@ -18,6 +18,12 @@ body{
   align-items: center;
 }
 
+#main_titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img img{
   border: solid 1px;
   border-radius: 10px;

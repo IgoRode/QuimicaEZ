@@ -100,6 +100,24 @@ main a:hover{
 .invisivel{
   display: none;
 }
+
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video_titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main_a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media (min-width: 800px)
 {
   .texto-main h4{
