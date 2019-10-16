@@ -55,6 +55,12 @@ body{
     text-align: center;
 }
 
+.col h2{
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+}
+
 .menu{
     margin-top: 20vh;
 }
