@@ -1,0 +1,39 @@
+body{
+	background-color: #00b894;
+}
+.logo{
+  width: auto;
+  height:50px;
+}
+.nav{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav li{
+    margin-right: 10%;
+}
+
+.texto{
+    text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.img{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img{
+    border-top: 5vh;
+    border-block: 10vh;
+    width: 50vw;
+    height: auto;
+}
