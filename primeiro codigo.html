@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Minha Primeira Calculadora </title>
+	</head>
+	<body bgcolor="#20B2AA">
+		<center><h2><font color='#696969' face='MV boli'>CALCULADORA MUITO SIMPLES</h2><center>
+		<center><h2><font color='#696969' face='MV boli'>ATIVIDADE DE LOGICA</h2><center>
+		<form name="formulario">
+		<table border=5 width='5' bgcolor="#696969">
+		<tr><td>
+		<input type='text' name='visor' size=11/><br/>
+		<br/>
+		<input type="button" value="7" onclick='butao(value);'/>
+		<input type="button" value="8" onclick='butao(value);'/>
+		<input type="button" value="9" onclick='butao(value);'/>
+		<input type="button" value="/" onclick='butao(value);'><br/>
+		<input type="button" value="4" onclick='butao(value);'/>
+		<input type="button" value="5" onclick='butao(value);'/>
+		<input type="button" value="6" onclick='butao(value);'/>
+		<input type="button" value="*" onclick='butao(value);'><br/>
+		<input type="button" value="1" onclick='butao(value);'/>
+		<input type="button" value="2" onclick='butao(value);'/>
+		<input type="button" value="3" onclick='butao(value);'/>
+		<input type="button" value="-" onclick='butao(value);'><br/>
+		<input type="button" value="0" onclick='butao(value);'/>
+		<input type="button" value="^" onclick='butao(value);'/>
+		<input type="button" value="=" onclick='calcule();'>
+		<input type="button" value="C" onclick='reset(value);'/>
+		<input type="button" value="+" onclick='butao(value);'>
+		<input type='button' value='(' onclick="butao(value);">
+		<input type='button' value=')' onclick="butao(value);">
+		<input type='button' value='.' onclick="butao(value);">
+		</form>
+		<script>
+			function butao(n){
+				var salvo=document.formulario.visor.value
+				document.formulario.visor.value=salvo+n
+			}
+			function reset(){
+				document.formulario.visor.value=''
+			}
+			function calcule(){
+				var salvo=document.formulario.visor.value
+				var result=eval(salvo)
+				document.formulario.visor.value=result
+			}
+		</script>
+	</body>
+	</td>
+	</tr>
+	</table>
+</html>
