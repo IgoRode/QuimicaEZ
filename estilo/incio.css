@@ -93,7 +93,8 @@ main a:hover{
 }
 
 #barra{ 
-  height: 04vh;
+  background: #00b894;
+  height: 01vh;
   width: 70vw;
 }
 
