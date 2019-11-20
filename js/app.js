@@ -6,9 +6,9 @@ function resposta1(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==8) {
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "cinco ligações pi e vinte e quatro ligações sigma." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "cinco ligações pi e vinte e quatro ligações sigma." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons").className = 'invisivel';
     document.getElementById("quiz").className = 'invisivel';
@@ -24,9 +24,9 @@ function resposta2(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==4) {
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "Mãos" + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "Mãos" + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons2").className = 'invisivel';
     document.getElementById("quiz2").className = 'invisivel';
@@ -42,9 +42,9 @@ function resposta3(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==6) {
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "5, 1 e 3" + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "5, 1 e 3" + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons3").className = 'invisivel';
     document.getElementById("quiz3").className = 'invisivel';
@@ -60,9 +60,9 @@ function resposta4(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==10) {
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "14" + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "14" + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons4").className = 'invisivel';
     document.getElementById("quiz4").className = 'invisivel';
@@ -79,9 +79,9 @@ function resposta5(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==12) {
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "2 carbonos quaternários." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + resposta + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "2 carbonos quaternários." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons5").className = 'invisivel';
     document.getElementById("quiz").className = 'quiz'
