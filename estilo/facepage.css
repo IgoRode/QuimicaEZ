@@ -3,25 +3,20 @@ html,body{
 	padding: 0;
 	font-family: 'Poiret One', cursive;
 	height: 100vh;
-	background-color: #00b894
-}
-.intro{
-	background:url('../img/THC-pode-cortar-fissura-causada-por-álcool-diz-estudo-da-Unifesp.jpg')no-repeat center center;
+	background:url('../img/TELA-INICIO.png')no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+.intro{
 	height: 100vh;
-	position: relative;
 }
 .txt{
-	margin: 0;
- 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 .txt h2{
 	font-size: 25px;
@@ -48,15 +43,14 @@ main{
 	align-items: center;
 	border-radius: 10px;
 	width: 25vw;
-	height: 67vh;
-	padding: 2vh;
-	margin-left: 2.5vw;
-	margin-right: 2.5vw;	
+	height: auto;
+	padding: 25px;
+	margin: 25px;
 }
 .icones{
 	display: flex;
 	width: auto;
-	height: 10vh;
+	height: 180px;
 }
 .desc-item{
 	text-align: justify;
