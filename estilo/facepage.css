@@ -54,6 +54,7 @@ main{
 }
 .desc-item{
 	text-align: justify;
+	font-weight: bold;
 }
 .btn{
     color: #ecf0f1;;
