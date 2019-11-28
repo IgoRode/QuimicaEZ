@@ -3,7 +3,7 @@ html,body{
 	padding: 0;
 	font-family: 'Poiret One', cursive;
 	height: 100vh;
-	background:url('../img/TELA-INICIO.png')no-repeat center center;
+	background:url('../img/tela_inicial.png')no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -20,7 +20,7 @@ html,body{
 }
 .txt h2{
 	font-size: 25px;
-	width: 80vw;
+	width: 60vw;
 	color: #ecf0f1;
 }
 .logo{
