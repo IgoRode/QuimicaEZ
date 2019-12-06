@@ -1,12 +1,27 @@
 body{
 	background-color: #00b894;
 }
+.h4{
+  font-size: 25px;
+  color: black;
+}
+.span{
+  font-size: 20px;
+  color: black;
+}
+.h5{
+  font-size: 20px;
+  color: black;
+}
+.img{
+  height: 30vh;
+  width: auto;
+}
 .logo{
   width: auto;
   height:50px;
 }
 .nav{
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,19 +47,18 @@ body{
   text-align: justify;
   align-items: center;
   display: flex;
-  justify-content: center;
-  margin-left: 8vw;
-  margin-right: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .jumbotron{
   height: 300px;
-	background-image: url(../img/chemical-formula-beautiful-background-of-green-cannabis-flowers-a-picture-id940306318.JPg);
+	background-image: url(../img/intro-quimica2.jpg);
 	background-size: cover;
-	background-position: center;
+  background-position: center;
 }
 main a{
   text-align: justify;
-  margin: 100px;
+  margin: 10px;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -133,10 +147,18 @@ progress::-webkit-progress-value {
   background:#00b894;
 }
 
-@media (min-width: 800px)
+@media (max-width: 800px)
 {
   .texto-main h4{
     font-size: 50px;
     margin-bottom: 15vh;
+  }
+  .img{
+    height: 20vh;
+    width: 90vw;
+  }
+  .img2{
+    height: 15vh;
+    width: 90vw;
   }
 }
