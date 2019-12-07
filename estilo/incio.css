@@ -1,5 +1,5 @@
 body{
-	background-color: #00b894;
+	background-color: #f6b93b;
 }
 .h4{
   font-size: 25px;
@@ -71,7 +71,7 @@ main a:hover{
 }
 .quiz{
     border-radius: 10px;
-    background-color: #55efc4;
+    background-color: #e58e26;
     margin-left: 7%;
     margin-bottom: 2%;
     text-align: center;
@@ -132,19 +132,19 @@ main a:hover{
 }
 
 progress::-webkit-progress-bar {
-  background: #55efc4;
+  background: #e58e26;
   border-radius: 50px;
   padding: 2px;
 }
 progress::-moz-progress-bar {  
-  background: #55efc4;
+  background: #e58e26;
   border-radius: 50px;
   padding: 2px;
 }
 
 progress::-webkit-progress-value {
   border-radius: 50px;
-  background:#00b894;
+  background:#f6b93b;
 }
 
 @media (max-width: 800px)
