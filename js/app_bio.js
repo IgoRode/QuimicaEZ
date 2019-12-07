@@ -6,9 +6,9 @@ function resposta1(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==8) {
-      texto.innerHTML = "<p>" + "funções orgânicas fenol e ácido carboxílico." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "gás metano, obtido pela atividade de bactérias anaeróbias na decomposição da matéria orgânica." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + "Resposta Correta:" + "funções orgânicas fenol e ácido carboxílico." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "gás metano, obtido pela atividade de bactérias anaeróbias na decomposição da matéria orgânica." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons").className = 'invisivel';
     document.getElementById("quiz").className = 'invisivel';
@@ -24,9 +24,9 @@ function resposta2(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==4) {
-      texto.innerHTML = "<p>" + "álcool e aldeído; álcool e cetona." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "formação de florestas energéticas em terras impróprias para a agricultura." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + "Resposta Correta:" + "álcool e aldeído; álcool e cetona." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "formação de florestas energéticas em terras impróprias para a agricultura." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons2").className = 'invisivel';
     document.getElementById("quiz2").className = 'invisivel';
@@ -42,9 +42,9 @@ function resposta3(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==6) {
-      texto.innerHTML = "<p>" + "Pertence à função álcool, sua massa molar é de 32 g e sua fórmula molecular é CH OH." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "a palha da cana e o etanol são usados como fonte de energia." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + "Resposta Correta:" + "Pertence à função álcool, sua massa molar é de 32 g e sua fórmula molecular é CH OH." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "a palha da cana e o etanol são usados como fonte de energia." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons3").className = 'invisivel';
     document.getElementById("quiz3").className = 'invisivel';
@@ -60,9 +60,9 @@ function resposta4(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==10) {
-      texto.innerHTML = "<p>" + "Cetona" + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "colabora na redução dos efeitos da degradação ambiental global produzida pelo uso de combustíveis fósseis, como os derivados do petróleo." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + "Resposta Correta:" + "Cetona" + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "colabora na redução dos efeitos da degradação ambiental global produzida pelo uso de combustíveis fósseis, como os derivados do petróleo." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons4").className = 'invisivel';
     document.getElementById("quiz4").className = 'invisivel';
@@ -79,9 +79,9 @@ function resposta5(resposta) {
     valor = valor + 20;
     document.getElementById('barra').value = valor;
     if (resposta==12) {
-      texto.innerHTML = "<p>" + "cetona e hidroxila alcoólica." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
+      texto.innerHTML = "<p>" + "Biocombustível." + "</p>" + "<p>" + "Resposta Certa" + "</p>";
     }else{
-      texto.innerHTML = "<p>" + "Resposta Correta:" + "cetona e hidroxila alcoólica." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
+      texto.innerHTML = "<p>" + "Resposta Correta:" + "Biocombustível.." + "</p>" + "<p>" + "Resposta Errada" + "</p>";
     }
     document.getElementById("botons5").className = 'invisivel';
     document.getElementById("quiz").className = 'quiz'
