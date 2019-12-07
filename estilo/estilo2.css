@@ -27,9 +27,7 @@ body{
 .img img{
   height: 20vh;
   width: auto;
-  border: solid 1px;
   border-radius: 10px;
-  border-color: black;
 }
 .nav li{
   margin-right: 10%;
