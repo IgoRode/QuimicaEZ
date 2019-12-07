@@ -44,7 +44,7 @@ body{
 }
 main a{
   text-align: justify;
-  margin: 100px;
+  margin: 10px;
   align-items: center;
   display: flex;
   flex-direction: row;
