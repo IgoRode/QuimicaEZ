@@ -1,156 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QuimicaEz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="estilo/incio.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz — Introdução à química orgânica — QuimicaEZ</title>
+  <meta name="description" content="5 questões no estilo ENEM sobre introdução à química orgânica.">
+  <link rel="icon" href="./img/logo_menu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <a class="navbar-brand" id="img"><img class="logo" src="./img/logo_menu.png" alt="logo do site"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="menu.html">Conteudo <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu_video_aula.html">Videos Aulas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-          </ul>
-        </div>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+        </svg>
+        <span>Quimica<span class="brand__ez">EZ</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="menu.html">Conteúdo</a>
+        <a class="nav__link" href="menu_video_aula.html">Vídeos</a>
+        <a class="nav__link nav__link--cta nav__link--active" href="quiz_introd.html" aria-current="page">Questões →</a>
       </nav>
+    </div>
+  </header>
 
-      <main>
-        <section class="jumbotron">
-  			<div class="container">
-  			</div>
-  			</section>
-
-        <div class="texto-main">
-          <h4>Bem vindo ao Quiz </h4>
-          <h4>Introdução a Quimica Organica</h4>
-        </div>
-    
-
-        <div id="quiz" class="quiz">
-          <h3>Questão 1</h3>
-          <p>Recentemente, os produtores de laranja do Brasil foram surpreendidos com a notícia de que a
-            exportação de suco de laranja para os Estados Unidos poderia ser suspensa por causa da contaminação
-            pelo agrotóxico carbendazim, representado a seguir.</p>
-          <p><img src="./img/quiz1-per-1.png" alt="Imagem para responder a questão"></p>  
-          <div id="botons" class="botons">
-              <p>De acordo com a estrutura, afirma-se que o carbendazim possui:</p>
-              <p>A)fórmula molecular C9H11N3O2 e um carbono terciário.</p>
-              <p>B)fórmula molecular C9H9N3O2 e sete carbonos secundários.</p>
-              <p>C)fórmula molecular C9H13N3O2 e três carbonos primários.</p>
-              <p>D)cinco ligações pi e vinte e quatro ligações sigma.</p>
-          <button onclick="resposta1(2)">A</button>
-          <button onclick="resposta1(4)">B</button>
-          <button onclick="resposta1(6)">C</button>
-          <button onclick="resposta1(8)">D</button>
+  <main id="main">
+    <div class="container">
+      <section class="quiz" data-quiz>
+        <header class="quiz__head" data-reveal>
+          <p class="eyebrow">// QUIZ · INTRODUÇÃO</p>
+          <h1 class="quiz__title">Teste seus conhecimentos</h1>
+          <div class="quiz__progress">
+            <span class="quiz__bar"><span class="quiz__fill" data-quiz-fill></span></span>
+            <span class="quiz__count">Questão <b data-quiz-current>1</b>/<span data-quiz-total>5</span></span>
           </div>
-          <p id="id_resposta"></p>
-        </div> 
+        </header>
 
-        <div id="quiz2" class="invisivel">
-          <h3>Questão 2</h3>
-          <p>As moléculas de nanoputians lembram figuras humanas e foram criadas para estimular o interesse de
-              jovens na compreensão da linguagem expressa em fórmulas estruturais, muito usadas em química
-              orgânica. Um exemplo é o NanoKid, representado na figura:</p>
-          <p><img src="./img/quiz1-per-3.png" alt="Imagem para responder a questão"></p>   
-          <p>Em que parte do corpo do NanoKid existe carbono quaternário?</p>
-          <div id="botons2" class="botons">
-            <p>A)Cabeça</p>
-            <p>B)Mãos</p>
-            <p>C)Tórax</p>
-            <p>D)Abdomen</p>
-          <button onclick="resposta2(2)">A</button>
-          <button onclick="resposta2(4)">B</button>
-          <button onclick="resposta2(6)">C</button>
-          <button onclick="resposta2(8)">D</button>
-          </div>
-          <p id="id_resposta2"></p>
-        </div> 
+        <ol class="quiz__list" data-quiz-list>
+          <li class="question is-active" data-question>
+            <p class="question__index">Questão 01</p>
+            <p class="question__stem">Recentemente, os produtores de laranja do Brasil foram surpreendidos com a notícia de que a exportação de suco de laranja para os Estados Unidos poderia ser suspensa por causa da contaminação pelo agrotóxico carbendazim, representado a seguir.</p>
+            <figure class="figure figure--light"><img src="./img/quiz1-per-1.png" alt="Estrutura do carbendazim"></figure>
+            <p class="question__ask">De acordo com a estrutura, afirma-se que o carbendazim possui:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">fórmula molecular <span class="formula">C<sub>9</sub>H<sub>11</sub>N<sub>3</sub>O<sub>2</sub></span> e um carbono terciário.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">fórmula molecular <span class="formula">C<sub>9</sub>H<sub>9</sub>N<sub>3</sub>O<sub>2</sub></span> e sete carbonos secundários.</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">fórmula molecular <span class="formula">C<sub>9</sub>H<sub>13</sub>N<sub>3</sub>O<sub>2</sub></span> e três carbonos primários.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">D</span><span class="option__text">cinco ligações pi e vinte e quatro ligações sigma.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
-        <div id="quiz3" class="invisivel">
-          <h3>Questão 3</h3>
-          <p>Observe a fórmula</p>
-          <p><img src="./img/quiz1-per-4.png" alt="Imagem para responder a questão"></p>
-          <p>As quantidades totais de átomos de carbono primário, secundário e terciário são, respectivamente:</p>   
-          <div id="botons3" class="botons">
-            <p>A)5, 2 e 2.</p>
-            <p>B)3, 2 e 2.</p>
-            <p>C)5, 1 e 3.</p>
-            <p>D)2, 3 e 4.</p>
-          <button onclick="resposta3(2)">A</button>
-          <button onclick="resposta3(4)">B</button>
-          <button onclick="resposta3(6)">C</button>
-          <button onclick="resposta3(8)">D</button>
-          </div>
-          <p id="id_resposta3"></p>
-        </div> 
+          <li class="question" data-question>
+            <p class="question__index">Questão 02</p>
+            <p class="question__stem">As moléculas de nanoputians lembram figuras humanas e foram criadas para estimular o interesse de jovens na compreensão da linguagem expressa em fórmulas estruturais, muito usadas em química orgânica. Um exemplo é o NanoKid, representado na figura:</p>
+            <figure class="figure figure--light"><img src="./img/quiz1-per-3.png" alt="Estrutura do NanoKid"></figure>
+            <p class="question__ask">Em que parte do corpo do NanoKid existe carbono quaternário?</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">Cabeça</span></button>
+              <button class="option" data-option data-correct><span class="option__key">B</span><span class="option__text">Mãos</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">Tórax</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">Abdômen</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
+          <li class="question" data-question>
+            <p class="question__index">Questão 03</p>
+            <p class="question__stem">Observe a fórmula a seguir.</p>
+            <figure class="figure figure--light"><img src="./img/quiz1-per-4.png" alt="Fórmula estrutural da questão 3"></figure>
+            <p class="question__ask">As quantidades totais de átomos de carbono primário, secundário e terciário são, respectivamente:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">5, 2 e 2.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">3, 2 e 2.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">C</span><span class="option__text">5, 1 e 3.</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">2, 3 e 4.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
-        <div id="quiz4" class="invisivel">
-          <h3>Questão 4</h3>
-          <p>A fórmula estrutural abaixo representa o antraceno, substância importante como matéria-prima para a
-              obtenção de corantes.</p>
-          <p><img src="./img/quiz1-per-5.png" alt="Imagem para responder a questão"></p>    
-          <P>Examinando-se essa fórmula, nota-se que o número de átomos de carbono na molécula do antraceno
-              é</P>
-          <div id="botons4" class="botons">
-            <P>A)3</P>
-            <P>B)14</P>
-            <P>C)10</P>
-            <P>D)18</P>
-          <button onclick="resposta4(2)">A</button>
-          <button onclick="resposta4(10)">B</button>
-          <button onclick="resposta4(6)">C</button>
-          <button onclick="resposta4(8)">D</button>
-          </div>
-          <p id="id_resposta4"></p>
-        </div>
+          <li class="question" data-question>
+            <p class="question__index">Questão 04</p>
+            <p class="question__stem">A fórmula estrutural abaixo representa o antraceno, substância importante como matéria-prima para a obtenção de corantes.</p>
+            <figure class="figure figure--light"><img src="./img/quiz1-per-5.png" alt="Estrutura do antraceno"></figure>
+            <p class="question__ask">Examinando-se essa fórmula, nota-se que o número de átomos de carbono na molécula do antraceno é:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">3</span></button>
+              <button class="option" data-option data-correct><span class="option__key">B</span><span class="option__text">14</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">10</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">18</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
+          <li class="question" data-question>
+            <p class="question__index">Questão 05</p>
+            <p class="question__stem">O BHT é um importante antioxidante sintético utilizado na indústria alimentícia.</p>
+            <figure class="figure figure--light"><img src="./img/quiz1-per-6.png" alt="Estrutura do BHT"></figure>
+            <p class="question__ask">Sobre o BHT, é correto afirmar que ele apresenta:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">3 carbonos quaternários.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">fórmula molecular <span class="formula">C<sub>12</sub>H<sub>21</sub>O</span>.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">C</span><span class="option__text">2 carbonos quaternários.</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">3 carbonos com hibridação <span class="formula">sp<sub>2</sub></span>.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
+        </ol>
 
-
-
-        <div id="quiz5" class="invisivel">
-          <h3>Questão 5</h3>
-          <p>O BHT é um importante antioxidante sintético utilizado na indústria alimentícia. Sobre o BHT é correto
-              afirmar que ele apresenta:</p>
-          <p><img src="./img/quiz1-per-6.png" alt="Imagem para responder a questão"></p>     
-          <div id="botons5" class="botons">
-            <P>A) 3 carbonos quaternários.</P>
-            <P>B) fórmula molecular C12H21O</P>
-            <P>C) 2 carbonos quaternários.</P>
-            <P>D) 3 carbonos com hibridação sp2</P>
-          <button onclick="resposta5(2)">A</button>
-          <button onclick="resposta5(4)">B</button>
-          <button onclick="resposta5(12)">C</button>
-          <button onclick="resposta5(8)">D</button>
-          </div>
-          <p id="id_resposta5"></p>
+        <div class="quiz__foot">
+          <button class="btn btn--accent" data-quiz-next hidden>Próxima questão →</button>
         </div>
 
-
-        <div id="progres">
-        <progress value="0" id="barra" max="100">0%</progress> 
+        <div class="quiz__result" data-quiz-result hidden>
+          <p class="eyebrow">// RESULTADO</p>
+          <p class="quiz__score"><b data-score>0</b> <small>/ 5</small></p>
+          <p class="quiz__verdict" data-verdict></p>
+          <div class="quiz__result-actions">
+            <button class="btn btn--accent" data-quiz-retry>Refazer quiz</button>
+            <a class="btn btn--ghost" href="conteudo_Introducao.html">Revisar o conteúdo</a>
+          </div>
         </div>
-            
-      </main>
+      </section>
+    </div>
+  </main>
 
-    </body>
-<script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+          </svg>
+          <span>Quimica<span class="brand__ez">EZ</span></span>
+        </a>
+        <p class="footer__tag">Química orgânica descomplicada: teoria, vídeo-aulas e questões no estilo ENEM.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Estudar</h4>
+          <a href="menu.html">Conteúdo</a>
+          <a href="menu_video_aula.html">Vídeo-aulas</a>
+          <a href="quiz_introd.html">Questões</a>
+        </div>
+        <div class="footer__col">
+          <h4>Temas</h4>
+          <a href="conteudo_Introducao.html">Introdução</a>
+          <a href="conteudo_funcoes.html">Funções orgânicas</a>
+          <a href="conteudo_biocombustivel.html">Biocombustíveis</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__meta">© Trabalho de Conclusão de Curso · IFMS — QuimicaEZ</p>
+  </footer>
+
+  <script src="./js/site.js"></script>
+  <script src="./js/quiz.js"></script>
+</body>
 </html>

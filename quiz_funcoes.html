@@ -1,162 +1,171 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QuimicaEz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="estilo/incio.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz — Funções orgânicas — QuimicaEZ</title>
+  <meta name="description" content="5 questões no estilo ENEM sobre funções orgânicas.">
+  <link rel="icon" href="./img/logo_menu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <a class="navbar-brand" id="img"><img class="logo" src="./img/logo_menu.png" alt="logo do site"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="menu.html">Conteudo <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu_video_aula.html">Videos Aulas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-          </ul>
-        </div>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+        </svg>
+        <span>Quimica<span class="brand__ez">EZ</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="menu.html">Conteúdo</a>
+        <a class="nav__link" href="menu_video_aula.html">Vídeos</a>
+        <a class="nav__link nav__link--cta nav__link--active" href="quiz_introd.html" aria-current="page">Questões →</a>
       </nav>
+    </div>
+  </header>
 
-      <main>
-        <section class="jumbotron">
-  			<div class="container">
-  			</div>
-  			</section>
-
-        <div class="texto-main">
-          <h4>Bem vindo ao Quiz </h4>
-          <h4>Funções Orgânicas</h4>
-        </div>
-    
-
-        <div id="quiz" class="quiz">
-          <h3>Questão 1</h3>
-          <p>O ácido salicílico foi originalmente descoberto devido às suas ações antipirética e analgésica. Porém,
-              descobriu-se, depois, que esse ácido pode ter uma ação corrosiva nas paredes do estômago. Para
-              contornar esse efeito foi adicionado um radical acetil à hidroxila ligada diretamente ao anel aromático,
-              dando origem a um éster de acetato, chamado de ácido acetilsalicílico (AAS), menos corrosivo, mas,
-              também, menos potente.</p>
-          <p><img src="./img/quiz2-per-1.png" alt="Imagem para responder a questão"></p> 
-          <p>A estrutura química do ácido salicílico, representada acima, apresenta</p> 
-          <div id="botons" class="botons">
-              <p>A)funções orgânicas éster e álcool.</p>
-              <p>B)funções orgânicas fenol e álcool.</p>
-              <p>C)um carbono com hibridação sp3.</p>
-              <p>D)funções orgânicas fenol e ácido carboxílico.</p>
-          <button onclick="resposta1(2)">A</button>
-          <button onclick="resposta1(4)">B</button>
-          <button onclick="resposta1(6)">C</button>
-          <button onclick="resposta1(8)">D</button>
+  <main id="main">
+    <div class="container">
+      <section class="quiz" data-quiz>
+        <header class="quiz__head" data-reveal>
+          <p class="eyebrow">// QUIZ · FUNÇÕES ORGÂNICAS</p>
+          <h1 class="quiz__title">Teste seus conhecimentos</h1>
+          <div class="quiz__progress">
+            <span class="quiz__bar"><span class="quiz__fill" data-quiz-fill></span></span>
+            <span class="quiz__count">Questão <b data-quiz-current>1</b>/<span data-quiz-total>5</span></span>
           </div>
-          <p id="id_resposta"></p>
-        </div> 
+        </header>
 
-        <div id="quiz2" class="invisivel">
-          <h3>Questão 2</h3>
-          <p>A glicose e a frutose são as substâncias responsáveis pelo sabor doce do mel e das frutas. São isômeros,
-              de fórmula C H O . 6 12 6.</p>
-              <p>Na digestão, a frutose é transformada em glicose, substância capaz de gerar
-              energia para as atividades corporais. Essas substâncias são chamadas de hidratos de carbono ou
-              carboidratos.</p>
-              <p>Glicose e frutose possuem respectivamente os seguintes grupos funcionais:</p> 
-          <div id="botons2" class="botons">
-            <p>A)álcool e ácido carboxílico; álcool e cetona.</p>
-            <p>B)álcool e aldeído; álcool e cetona.</p>
-            <p>C)álcool e cetona; álcool e ácido carboxílico.</p>
-            <p>D)haleto e aldeído; álcool e cetona.</p>
-          <button onclick="resposta2(2)">A</button>
-          <button onclick="resposta2(4)">B</button>
-          <button onclick="resposta2(6)">C</button>
-          <button onclick="resposta2(8)">D</button>
-          </div>
-          <p id="id_resposta2"></p>
-        </div> 
+        <ol class="quiz__list" data-quiz-list>
+          <li class="question is-active" data-question>
+            <p class="question__index">Questão 01</p>
+            <p class="question__stem">O ácido salicílico foi originalmente descoberto devido às suas ações antipirética e analgésica. Porém, descobriu-se depois que esse ácido pode ter ação corrosiva nas paredes do estômago. Para contornar esse efeito, foi adicionado um radical acetil à hidroxila ligada diretamente ao anel aromático, dando origem a um éster de acetato, chamado de ácido acetilsalicílico (AAS), menos corrosivo, mas também menos potente.</p>
+            <figure class="figure figure--light"><img src="./img/quiz2-per-1.png" alt="Estrutura do ácido salicílico"></figure>
+            <p class="question__ask">A estrutura química do ácido salicílico, representada acima, apresenta:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">funções orgânicas éster e álcool.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">funções orgânicas fenol e álcool.</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">um carbono com hibridação <span class="formula">sp<sub>3</sub></span>.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">D</span><span class="option__text">funções orgânicas fenol e ácido carboxílico.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
-        <div id="quiz3" class="invisivel">
-          <h3>Questão 3</h3>
-          <p>A destilação seca da madeira é um processo bastante antigo e ainda muito utilizado para a obtenção de metanol, tabém chamado de 'espírito da madeira'.A respeito do metanol, assinale a alternativa correta.</p>  
-          <div id="botons3" class="botons">
-            <p>A)É um poliol e sua nomenclatura oficial é álcool metílico.</p>
-            <p>B)Pertence à função aldeído e é de cadeia insaturada.</p>
-            <p>C)Pertence à função álcool, sua massa molar é de 32 g e sua fórmula molecular é CH OH.</p>
-            <p>D)Pertence à função cetona e é de cadeia saturada.</p>
-          <button onclick="resposta3(2)">A</button>
-          <button onclick="resposta3(4)">B</button>
-          <button onclick="resposta3(6)">C</button>
-          <button onclick="resposta3(8)">D</button>
-          </div>
-          <p id="id_resposta3"></p>
-        </div> 
+          <li class="question" data-question>
+            <p class="question__index">Questão 02</p>
+            <p class="question__stem">A glicose e a frutose são as substâncias responsáveis pelo sabor doce do mel e das frutas. São isômeros, de fórmula <span class="formula">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></span>. Na digestão, a frutose é transformada em glicose, substância capaz de gerar energia para as atividades corporais. Essas substâncias são chamadas de hidratos de carbono ou carboidratos.</p>
+            <p class="question__ask">Glicose e frutose possuem, respectivamente, os seguintes grupos funcionais:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">álcool e ácido carboxílico; álcool e cetona.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">B</span><span class="option__text">álcool e aldeído; álcool e cetona.</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">álcool e cetona; álcool e ácido carboxílico.</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">haleto e aldeído; álcool e cetona.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
+          <li class="question" data-question>
+            <p class="question__index">Questão 03</p>
+            <p class="question__stem">A destilação seca da madeira é um processo bastante antigo e ainda muito utilizado para a obtenção de metanol, também chamado de “espírito da madeira”.</p>
+            <p class="question__ask">A respeito do metanol, assinale a alternativa correta.</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">É um poliol e sua nomenclatura oficial é álcool metílico.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">Pertence à função aldeído e é de cadeia insaturada.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">C</span><span class="option__text">Pertence à função álcool, sua massa molar é de 32 g e sua fórmula molecular é <span class="formula">CH<sub>3</sub>OH</span>.</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">Pertence à função cetona e é de cadeia saturada.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
 
-        <div id="quiz4" class="invisivel">
-          <h3>Questão 4</h3>
-          <p>A Prednisona é um anti-inflamatório indicado para o tratamento de doenças endócrinas, respiratórias,
-              dentre outras. Sua estrutura está representada abaixo.</p>
-          <p><img src="./img/quiz2-per-4.png" alt="Imagem para responder a questão"></p>    
-          <P>É uma função orgânica presente na estrutura da Prednisona:</P>
-          <div id="botons4" class="botons">
-            <P>A)Éster</P>
-            <P>B)Cetona</P>
-            <P>C)Aldeído</P>
-            <P>D)Enol</P>
-          <button onclick="resposta4(2)">A</button>
-          <button onclick="resposta4(10)">B</button>
-          <button onclick="resposta4(6)">C</button>
-          <button onclick="resposta4(8)">D</button>
-          </div>
-          <p id="id_resposta4"></p>
+          <li class="question" data-question>
+            <p class="question__index">Questão 04</p>
+            <p class="question__stem">A Prednisona é um anti-inflamatório indicado para o tratamento de doenças endócrinas, respiratórias, dentre outras. Sua estrutura está representada abaixo.</p>
+            <figure class="figure figure--light"><img src="./img/quiz2-per-4.png" alt="Estrutura da Prednisona"></figure>
+            <p class="question__ask">É uma função orgânica presente na estrutura da Prednisona:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">Éster</span></button>
+              <button class="option" data-option data-correct><span class="option__key">B</span><span class="option__text">Cetona</span></button>
+              <button class="option" data-option><span class="option__key">C</span><span class="option__text">Aldeído</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">Enol</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
+
+          <li class="question" data-question>
+            <p class="question__index">Questão 05</p>
+            <p class="question__stem">Um trabalho publicado na <em>Nature Medicine</em>, em 2016, mostrou que a Withaferin A, um componente do extrato da planta <em>Withania somnifera</em> (cereja de inverno), reduziu o peso entre 20 e 25% em ratos obesos alimentados com dieta de alto teor de gorduras.</p>
+            <figure class="figure figure--light"><img src="./img/quiz2-per-5.png" alt="Estrutura da Withaferin A"></figure>
+            <p class="question__ask">As funções orgânicas presentes na estrutura destacada são:</p>
+            <div class="options" data-options>
+              <button class="option" data-option><span class="option__key">A</span><span class="option__text">ácido carboxílico e cetona.</span></button>
+              <button class="option" data-option><span class="option__key">B</span><span class="option__text">aldeído e éter.</span></button>
+              <button class="option" data-option data-correct><span class="option__key">C</span><span class="option__text">cetona e hidroxila alcoólica.</span></button>
+              <button class="option" data-option><span class="option__key">D</span><span class="option__text">cetona e éster.</span></button>
+            </div>
+            <p class="question__feedback" data-feedback hidden></p>
+          </li>
+        </ol>
+
+        <div class="quiz__foot">
+          <button class="btn btn--accent" data-quiz-next hidden>Próxima questão →</button>
         </div>
 
-
-
-
-        <div id="quiz5" class="invisivel">
-          <h3>Questão 5</h3>
-          <p>Um trabalho publicado na Nature Medicine, em 2016, mostrou que Withaferin A, um componente do
-              extrato da planta Withania somnifera (cereja de inverno), reduziu o peso, entre
-              20
-              a
-              25%,
-              em ratos
-              
-              obesos alimentados em dieta de alto teor de gorduras.</p>
-          <p><img src="./img/quiz2-per-5.png" alt="Imagem para responder a questão"></p>     
-          <div id="botons5" class="botons">
-            <P>A) ácido carboxílico e cetona.</P>
-            <P>B) aldeído e éter.</P>
-            <P>C) cetona e hidroxila alcoólica.</P>
-            <P>D) cetona e éster.</P>
-          <button onclick="resposta5(2)">A</button>
-          <button onclick="resposta5(4)">B</button>
-          <button onclick="resposta5(12)">C</button>
-          <button onclick="resposta5(8)">D</button>
+        <div class="quiz__result" data-quiz-result hidden>
+          <p class="eyebrow">// RESULTADO</p>
+          <p class="quiz__score"><b data-score>0</b> <small>/ 5</small></p>
+          <p class="quiz__verdict" data-verdict></p>
+          <div class="quiz__result-actions">
+            <button class="btn btn--accent" data-quiz-retry>Refazer quiz</button>
+            <a class="btn btn--ghost" href="conteudo_funcoes.html">Revisar o conteúdo</a>
           </div>
-          <p id="id_resposta5"></p>
         </div>
+      </section>
+    </div>
+  </main>
 
-
-        <div id="progres">
-        <progress value="0" id="barra" max="100">0%</progress> 
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+          </svg>
+          <span>Quimica<span class="brand__ez">EZ</span></span>
+        </a>
+        <p class="footer__tag">Química orgânica descomplicada: teoria, vídeo-aulas e questões no estilo ENEM.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Estudar</h4>
+          <a href="menu.html">Conteúdo</a>
+          <a href="menu_video_aula.html">Vídeo-aulas</a>
+          <a href="quiz_introd.html">Questões</a>
         </div>
-            
-      </main>
+        <div class="footer__col">
+          <h4>Temas</h4>
+          <a href="conteudo_Introducao.html">Introdução</a>
+          <a href="conteudo_funcoes.html">Funções orgânicas</a>
+          <a href="conteudo_biocombustivel.html">Biocombustíveis</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__meta">© Trabalho de Conclusão de Curso · IFMS — QuimicaEZ</p>
+  </footer>
 
-    </body>
-<script src="js/app_funcoes.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./js/site.js"></script>
+  <script src="./js/quiz.js"></script>
+</body>
 </html>

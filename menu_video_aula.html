@@ -1,92 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QuimicaEz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./estilo/estilo2.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vídeo-aulas — QuimicaEZ</title>
+  <meta name="description" content="Vídeo-aulas de química orgânica: introdução, funções orgânicas (3 aulas) e biocombustíveis.">
+  <link rel="icon" href="./img/logo_menu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <a class="navbar-brand" id="img"><img class="logo" src="./img/logo_menu.png" alt="logo do site"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="menu.html">Conteudo <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu_video_aula.html">Videos Aulas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-          </ul>
-        </div>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+        </svg>
+        <span>Quimica<span class="brand__ez">EZ</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="menu.html">Conteúdo</a>
+        <a class="nav__link nav__link--active" href="menu_video_aula.html" aria-current="page">Vídeos</a>
+        <a class="nav__link nav__link--cta" href="quiz_introd.html">Questões →</a>
       </nav>
+    </div>
+  </header>
 
-      <main>
-        <section class="jumbotron">
-  			<div class="container">
-  			</div>
-  			</section>
-            <h1 id="main_titulo">Videos Aulas</h1>
-              <div class="container menu">
-                <div class="row">
-                  <div class="col">
-                    <div class="img"><a href="video_intro.html"><img src="./img/quimica.png" alt="imagem exemplo"></a></div>
-                    <h2>Introdução a Quimica Organica</h2>
-                    <p>A Quimica Organica é uma das quimicas mais presentes no nosso cotidiano, podendo estar no lugares mais inesperados. A Quimica organica também é conhecida pela quimica que estuda os compostos organicos.
-                      Acessando essa pagina voce terá uma introdução a esse novo mundo da Quimica.</p>
-                  </div>
-                  <div class="col">
-                      <div class="img"><a href="video_funcao1.html"><img src="./img/funcoes.png" alt="imagem exemplo"></a></div>
-                      <h2>Funções Organicas - aula 1</h2>
-                      <p>Hidrocarboneto, Álcool, Fenol, Éter, Aldeído, Cetona, Ácido carboxílico, Éster e Amina primária, essas são algumas funções Organicas. Onde falaremos sobre algumas delas na nossa primeira aula. 
-                      </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                      <div class="img"><a href="video_funcao2.html"><img src="./img/funcoes.png" alt="imagem exemplo"></a></div>
-                      <h2>Funções Organicas - Aula 2</h2>
-                      <p>
-                          Hidrocarboneto, Álcool, Fenol, Éter, Aldeído, Cetona, Ácido carboxílico, Éster e Amina primária, essas são algumas funções Organicas. Onde falaremos sobre algumas delas na continuação da nossa aula. 
-                      </p>
-                  </div>
-                  <div class="col">
-                    <div class="img"><a href="video_funcao3.html"><img src="./img/funcoes.png" alt="imagem exemplo"></a></div>
-                    <h2>Funções Organicas - aula 3</h2>
-                    <p>
-                        Hidrocarboneto, Álcool, Fenol, Éter, Aldeído, Cetona, Ácido carboxílico, Éster e Amina primária, essas são algumas funções Organicas. Onde falaremos sobre algumas delas na nossa ultima aula.
-                    </p>
-                </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="img"><a href="video_bio.html"><img src="./img/bio.png" alt="imagem exemplo"></a></div>
-                    <h2>Biocombustíveis</h2>
-                    <p>
-                        Nessa pagina daremos a voce uma breve explicação, seguida de uma video aula se necessario sobre as nomeclaturas dos componente organico.
-                    </p>
-                </div>
-                </div>
-                </div>
-      </main>
+  <main id="main">
+    <header class="page-head">
+      <div class="container page-head__inner" data-reveal>
+        <p class="eyebrow">// VÍDEO-AULAS</p>
+        <h1>Aprenda vendo, no seu ritmo.</h1>
+        <p>Cinco aulas para fixar a teoria de um jeito mais visual. Assista, pause, revise — e depois teste no quiz.</p>
+      </div>
+    </header>
 
-    </body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <section class="section container">
+      <div class="card-grid">
+        <article class="card" data-reveal>
+          <div class="card__index">AULA 01</div>
+          <h3 class="card__title">Introdução à química orgânica</h3>
+          <p class="card__desc">Uma porta de entrada para o mundo dos compostos orgânicos e o papel central do carbono.</p>
+          <span class="card__link">Assistir <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="video_intro.html" aria-label="Assistir introdução à química orgânica"></a>
+        </article>
+
+        <article class="card" data-reveal data-delay="1">
+          <div class="card__index">AULA 02</div>
+          <h3 class="card__title">Funções orgânicas — parte 1</h3>
+          <p class="card__desc">Começo da série sobre funções: hidrocarbonetos, álcoois e os primeiros grupos funcionais.</p>
+          <span class="card__link">Assistir <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="video_funcao1.html" aria-label="Assistir funções orgânicas aula 1"></a>
+        </article>
+
+        <article class="card" data-reveal data-delay="2">
+          <div class="card__index">AULA 03</div>
+          <h3 class="card__title">Funções orgânicas — parte 2</h3>
+          <p class="card__desc">Continuação da série de funções orgânicas, com mais grupos e exemplos do cotidiano.</p>
+          <span class="card__link">Assistir <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="video_funcao2.html" aria-label="Assistir funções orgânicas aula 2"></a>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__index">AULA 04</div>
+          <h3 class="card__title">Funções orgânicas — parte 3</h3>
+          <p class="card__desc">Encerramento da série, fechando o conjunto das principais funções orgânicas.</p>
+          <span class="card__link">Assistir <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="video_funcao3.html" aria-label="Assistir funções orgânicas aula 3"></a>
+        </article>
+
+        <article class="card" data-reveal data-delay="1">
+          <div class="card__index">AULA 05</div>
+          <h3 class="card__title">Biocombustíveis</h3>
+          <p class="card__desc">A química da energia renovável: etanol, biodiesel e a nomenclatura dos compostos envolvidos.</p>
+          <span class="card__link">Assistir <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="video_bio.html" aria-label="Assistir biocombustíveis"></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+          </svg>
+          <span>Quimica<span class="brand__ez">EZ</span></span>
+        </a>
+        <p class="footer__tag">Química orgânica descomplicada: teoria, vídeo-aulas e questões no estilo ENEM.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Estudar</h4>
+          <a href="menu.html">Conteúdo</a>
+          <a href="menu_video_aula.html">Vídeo-aulas</a>
+          <a href="quiz_introd.html">Questões</a>
+        </div>
+        <div class="footer__col">
+          <h4>Temas</h4>
+          <a href="conteudo_Introducao.html">Introdução</a>
+          <a href="conteudo_funcoes.html">Funções orgânicas</a>
+          <a href="conteudo_biocombustivel.html">Biocombustíveis</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__meta">© Trabalho de Conclusão de Curso · IFMS — QuimicaEZ</p>
+  </footer>
+
+  <script src="./js/site.js"></script>
+</body>
 </html>
-
-
-
-<!-- 1- intro
-2- funcoes aula-1/2/3
-3- biocombustiveis aula
-total -- 5 -->

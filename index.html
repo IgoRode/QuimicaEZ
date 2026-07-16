@@ -1,41 +1,193 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QuimicaEz</title>
-        <link rel="stylesheet" type="text/css" href="./estilo/facepage.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <section class="intro">
-            <div class="txt">
-                <img class="logo" src="./img/title.png"/>
-                <h2>Com essa aplicação estudar ficou mais facil, onde voce pode acessar na hora e onde quiser, com vídeo aulas e questionários inspirados no enem, nota 10 será apenas uma rotina.</h2>
-                <a href="#principal" class="btn">Vamos lá</a>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuimicaEZ — Química orgânica do átomo ao ENEM</title>
+  <meta name="description" content="Estude química orgânica com teoria direta, vídeo-aulas e questões no estilo ENEM. Nota 10 vira rotina.">
+  <link rel="icon" href="./img/logo_menu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+        </svg>
+        <span>Quimica<span class="brand__ez">EZ</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <a class="nav__link nav__link--active" href="index.html" aria-current="page">Início</a>
+        <a class="nav__link" href="menu.html">Conteúdo</a>
+        <a class="nav__link" href="menu_video_aula.html">Vídeos</a>
+        <a class="nav__link nav__link--cta" href="quiz_introd.html">Questões →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">// QUÍMICA ORGÂNICA · FOCO NO ENEM</p>
+          <h1 class="hero__title">Do <em>átomo</em><br>ao vestibular.</h1>
+          <p class="hero__sub lede">Teoria direta ao ponto, vídeo-aulas e questões no estilo ENEM — tudo na hora e onde você quiser. Aqui, nota 10 vira rotina.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="menu.html">Começar a estudar <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="quiz_introd.html">Fazer um quiz</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">03</div>
+              <div class="stat__label">temas</div>
             </div>
-        </section>
-        <main id="principal">
-            <div class="itens">
-                <a href="quiz_introd.html"><img src="./img/questions-icon.png" class="icones"></a>
-                <h3 class="">QUESTÕES</h3>
-                <p class="desc-item">Resolva Agora questões e teste seus conhecimentos. </p>
+            <div class="stat">
+              <div class="stat__num">05</div>
+              <div class="stat__label">vídeo-aulas</div>
             </div>
-            <div class="itens">
-                <a href="menu.html"><img src="./img/intro-icon.png" class="icones"></a>
-                <h3 class="">QUIMICA ORGANICA</h3>
-                <p class="desc-item">Conheça a Quimica Organica e aprenda mais sobre ela. </p>
+            <div class="stat">
+              <div class="stat__num">15</div>
+              <div class="stat__label">questões ENEM</div>
             </div>
-            <div class="itens">
-                <a href="menu_video_aula.html"><img src="./img/video-icon.png" class="icones"></a>
-                <h3 class="">VIDEO AULAS</h3>
-                <p class="desc-item">Apreda sobre a Quimica Organica e aprenda mais, de uma forma mais interativa com nossas video-aulas. </p>
-            </div>
-        </main>
-        <footer>
-            <div>
-                <span> &copy;Trabalho de conclusão de curso IFMS</span>
-            </div>
-        </footer>
-    </body>
+          </div>
+        </div>
+
+        <div class="hero__art" data-reveal data-delay="1" aria-hidden="true">
+          <svg class="molecule" viewBox="0 0 400 400" role="img" aria-label="Estrutura molecular">
+            <circle class="halo" cx="200" cy="105" r="30"/>
+            <!-- anel aromático -->
+            <circle cx="200" cy="200" r="58" fill="none" stroke="var(--accent-line)" stroke-width="1.4" stroke-dasharray="4 7" opacity="0.7"/>
+            <polygon class="bond bond--draw" points="282,153 200,105 118,153 118,247 200,295 282,247" style="animation-delay:.1s"/>
+            <line class="bond bond--draw" x1="282" y1="153" x2="282" y2="247" style="animation-delay:.5s"/>
+            <!-- pendentes -->
+            <line class="bond bond--draw" x1="282" y1="153" x2="345" y2="118" style="animation-delay:.8s"/>
+            <line class="bond bond--draw" x1="118" y1="247" x2="55" y2="282" style="animation-delay:.9s"/>
+            <!-- nós -->
+            <circle class="node node--pulse" cx="200" cy="105" r="9"/>
+            <circle class="node" cx="282" cy="153" r="9"/>
+            <circle class="node node--pulse" cx="282" cy="247" r="9"/>
+            <circle class="node" cx="200" cy="295" r="9"/>
+            <circle class="node node--pulse" cx="118" cy="247" r="9"/>
+            <circle class="node" cx="118" cy="153" r="9"/>
+            <circle class="node node--cyan" cx="345" cy="118" r="13"/>
+            <text class="atom" x="345" y="118">O</text>
+            <circle class="node node--cyan" cx="55" cy="282" r="13"/>
+            <text class="atom" x="55" y="282">N</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como estudar -->
+    <section class="section container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">// COMO FUNCIONA</p>
+        <h2>Três jeitos de aprender o mesmo assunto.</h2>
+        <p>Leia a teoria, assista à aula e teste na prática. Combine do seu jeito — o conteúdo conversa entre si.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card" data-reveal>
+          <div class="card__index">01 / LER</div>
+          <h3 class="card__title">Conteúdo</h3>
+          <p class="card__desc">Resumos objetivos de química orgânica, com estruturas e grupos funcionais explicados sem enrolação.</p>
+          <span class="card__link">Ver os temas <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="menu.html" aria-label="Ver o conteúdo"></a>
+        </article>
+        <article class="card" data-reveal data-delay="1">
+          <div class="card__index">02 / ASSISTIR</div>
+          <h3 class="card__title">Vídeo-aulas</h3>
+          <p class="card__desc">Aulas curtas para fixar o que leu de um jeito mais visual e interativo. Ideal para revisar antes da prova.</p>
+          <span class="card__link">Assistir agora <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="menu_video_aula.html" aria-label="Ver as vídeo-aulas"></a>
+        </article>
+        <article class="card" data-reveal data-delay="2">
+          <div class="card__index">03 / TESTAR</div>
+          <h3 class="card__title">Questões</h3>
+          <p class="card__desc">Quizzes com questões inspiradas no ENEM e correção na hora. Descubra o que já domina e o que falta.</p>
+          <span class="card__link">Resolver questões <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="quiz_introd.html" aria-label="Fazer as questões"></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trilha de temas -->
+    <section class="section container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">// TRILHA DE ESTUDOS</p>
+        <h2>Comece por onde faz sentido.</h2>
+        <p>Do conceito de carbono às aplicações do dia a dia. Cada tema tem teoria, vídeo e quiz próprios.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card" data-reveal>
+          <div class="card__index">TEMA 01</div>
+          <h3 class="card__title">Introdução à química orgânica</h3>
+          <p class="card__desc">O elemento carbono, ligações, classificação, hibridização e por que o <span class="formula">C</span> está em tudo.</p>
+          <div class="card__tags"><span class="tag">carbono</span><span class="tag">hibridização</span><span class="tag">ligações</span></div>
+          <span class="card__link">Estudar tema <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="conteudo_Introducao.html" aria-label="Estudar introdução à química orgânica"></a>
+        </article>
+        <article class="card" data-reveal data-delay="1">
+          <div class="card__index">TEMA 02</div>
+          <h3 class="card__title">Funções orgânicas</h3>
+          <p class="card__desc">Hidrocarbonetos, álcoois, fenóis, cetonas, aldeídos, ácidos e mais — como reconhecer cada grupo funcional.</p>
+          <div class="card__tags"><span class="tag">álcool</span><span class="tag">cetona</span><span class="tag">ácidos</span></div>
+          <span class="card__link">Estudar tema <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="conteudo_funcoes.html" aria-label="Estudar funções orgânicas"></a>
+        </article>
+        <article class="card" data-reveal data-delay="2">
+          <div class="card__index">TEMA 03</div>
+          <h3 class="card__title">Biocombustíveis</h3>
+          <p class="card__desc">Etanol, biodiesel e a química por trás da energia renovável — o Brasil como pioneiro mundial.</p>
+          <div class="card__tags"><span class="tag">etanol</span><span class="tag">biodiesel</span><span class="tag">energia</span></div>
+          <span class="card__link">Estudar tema <span class="btn__arrow" aria-hidden="true">→</span></span>
+          <a class="card__stretch" href="conteudo_biocombustivel.html" aria-label="Estudar biocombustíveis"></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+          </svg>
+          <span>Quimica<span class="brand__ez">EZ</span></span>
+        </a>
+        <p class="footer__tag">Química orgânica descomplicada: teoria, vídeo-aulas e questões no estilo ENEM.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Estudar</h4>
+          <a href="menu.html">Conteúdo</a>
+          <a href="menu_video_aula.html">Vídeo-aulas</a>
+          <a href="quiz_introd.html">Questões</a>
+        </div>
+        <div class="footer__col">
+          <h4>Temas</h4>
+          <a href="conteudo_Introducao.html">Introdução</a>
+          <a href="conteudo_funcoes.html">Funções orgânicas</a>
+          <a href="conteudo_biocombustivel.html">Biocombustíveis</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__meta">© Trabalho de Conclusão de Curso · IFMS — QuimicaEZ</p>
+  </footer>
+
+  <script src="./js/site.js"></script>
+</body>
 </html>

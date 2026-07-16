@@ -1,73 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QuimicaEz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./estilo/incio.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introdução à química orgânica — QuimicaEZ</title>
+  <meta name="description" content="O carbono, ligações covalentes, classificação do carbono e hibridização: a base da química orgânica.">
+  <link rel="icon" href="./img/logo_menu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo/theme.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <a class="navbar-brand" id="img"><img class="logo" src="./img/logo_menu.png" alt="logo do site"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="menu.html">Conteudo <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu_video_aula.html">Videos Aulas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-          </ul>
-        </div>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+        </svg>
+        <span>Quimica<span class="brand__ez">EZ</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Navegação principal">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link nav__link--active" href="menu.html" aria-current="page">Conteúdo</a>
+        <a class="nav__link" href="menu_video_aula.html">Vídeos</a>
+        <a class="nav__link nav__link--cta" href="quiz_introd.html">Questões →</a>
       </nav>
+    </div>
+  </header>
 
-      <main>
-        <section class="jumbotron">
-  			<div class="container">
-  			</div>
-  			</section>
-
-        <div class="texto-main">
-          <h1>INTRODUÇÃO A QUÍMICA ORGANICA</h1>
-              <p>A química orgânica é o ramo da química responsável pelo estudo dos compostos que têm o elemento carbono presente em sua estrutura. Os compostos orgânicos estão presentes em todos os organismos vivos, o que faz sua importância ser maior ainda. Com o passar do tempo e com a evolução dos estudos em química orgânica, compostos deste tipo estão cada vez mais presentes no nosso cotidiano, sejam eles roupas, alimentos, plásticos, combustíveis, etc. Além do carbono, os elementos químicos hidrogênio, oxigênio e nitrogênio também são muito presentes em compostos orgânicos.</p>
-          <p class="h4">Principais características em compostos orgânicos:</p>
-              <p>  - Fazem predominantemente ligações covalente; </p>
-              <p>  - Compostos orgânicos formados somente por carbono e por carbono e hidrogênio são apolares. Quando, na molécula de um composto orgânico, houver um outro elemento químico além de carbono e hidrogênio, suas moléculas passarão a apresentar uma certa polaridade;</p>   
-              <p>  - O carbono é um capaz de se ligar a outros carbonos, formando longas cadeias carbônicas;</p>
-              <p>  - O carbono é um elemento tetravalente, ou seja, faz 4 ligações. O hidrogênio é monovalente, o oxigênio é bivalente e o nitrogênio é trivalente;</p>
-              <p>  - Dentre as 4 ligações que podem ser feitas pelo carbono, pode-se ter a presença de ligações duplas e/ou triplas.</p>
-              <p>Atenção : Existem compostos que têm o carbono em sua fórmula e não são orgânicos, são eles os carbonatos,  os cianetos, CO e o CO2.</p>
-          <p class="h4">CLASSIFICAÇÃO DO CARBONO</p>
-              <p>Em uma cadeia carbônica, o carbono pode ser classificado de acordo com o número de outros átomos de carbono a ele ligados.</p>
-              <p><img class="img" src="./img/tabelaligacao.png" alt="tabela das ligações do carbono"></p>
-          <p class="h5">OUTRAS CLASSIFICAÇÕES</p>   
-              <p><span class="span">Carbono quiral:</span> que pode ser classificado por um átomo de carbono que possuem 4 ligações sigma realizadas com 4 substâncias diferentes.</p> 
-              <p><img src="./img/carbono-quiral.png" alt="Exemplo de molecula de carbono quiral"></p>
-              <p><span class="span">Carbono saturado:</span>quando apresenta quatro ligações simples. Essas ligações são denominadas sigma (σ).</p>
-              <p><span class="span">Carbono insaturado:</span>quando apresenta pelo menos uma ligação dupla ou tripla. Essas ligações possuem uma denominada pi( <span class="span">π</span>).</p>
-              <p>OBS:</p>
-              <p><img class="img" src="./img/sigma.png" alt="Sigma e Pi"></p>
-              <p class="h4">HIBRIDIZAÇÃO</p>
-              <p>Para realizar quatro ligações do tipo sigma, o carbono deveria apresentar quatro orbitais incompletos, esses orbitais seriam os responsáveis por realizar as ligações sigma. Mas quando paramos para observar os orbitais do carbono, vemos que isso não é possível.</p>
-              <p>Afim de conseguir adquirir os seus 4 orbitais incompletos para realização das suas 4 ligações sigma, o carbono sofre um processo chamado de hibridização, é assim adquire seus 4 orbitais incompletos, o q o torna um elemento tetravalente.</p>
-              <p>A partir da hibridização, podemos classificar o carbono como tendo hibridização dos tipos sp, sp2 ou sp3. Como por exemplo:</p>
-              <p><img class="img" src="./img/hibridacao.png"alt="Tabela com os exemplos de hibridização"></p>
-              <p>Fonte Texto Adaptado : descomplica.com.br/quimica/cursinho Acesso em: set de 2019.</p>
-        <p><a href="quiz_introd.html" id="a">Testar meus conhecimentos</a></p>
-        <p><a href="video_intro.html" id="a">Video aula sobre a Introdução da Quimica Organica</a></p>
+  <main id="main">
+    <header class="page-head">
+      <div class="container page-head__inner" data-reveal>
+        <p class="eyebrow">// TEMA 01 · CONTEÚDO</p>
+        <h1>Introdução à química orgânica</h1>
+        <p>Tudo começa no carbono. Entenda por que ele é o elemento central da vida e da química que nos cerca.</p>
       </div>
-      </main>
+    </header>
 
-    </body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <article class="article container">
+      <p>A química orgânica é o ramo da química responsável pelo estudo dos compostos que têm o elemento carbono presente em sua estrutura. Os compostos orgânicos estão presentes em todos os organismos vivos, o que faz sua importância ser maior ainda. Com o passar do tempo e com a evolução dos estudos em química orgânica, compostos deste tipo estão cada vez mais presentes no nosso cotidiano, sejam eles roupas, alimentos, plásticos, combustíveis, etc. Além do carbono, os elementos químicos hidrogênio, oxigênio e nitrogênio também são muito presentes em compostos orgânicos.</p>
+
+      <h2><span class="idx">01.1</span>Principais características dos compostos orgânicos</h2>
+      <ul>
+        <li>Fazem predominantemente ligações covalentes.</li>
+        <li>Compostos formados somente por carbono, ou por carbono e hidrogênio, são apolares. Quando há outro elemento além de carbono e hidrogênio na molécula, ela passa a apresentar certa polaridade.</li>
+        <li>O carbono é capaz de se ligar a outros carbonos, formando longas cadeias carbônicas.</li>
+        <li>O carbono é tetravalente (faz 4 ligações). O hidrogênio é monovalente, o oxigênio é bivalente e o nitrogênio é trivalente.</li>
+        <li>Dentre as 4 ligações do carbono, pode haver ligações duplas e/ou triplas.</li>
+      </ul>
+
+      <div class="callout">
+        <span class="callout__label">Atenção</span>
+        Existem compostos que têm carbono na fórmula e não são orgânicos: os carbonatos, os cianetos, o <span class="formula">CO</span> e o <span class="formula">CO<sub>2</sub></span>.
+      </div>
+
+      <h2><span class="idx">01.2</span>Classificação do carbono</h2>
+      <p>Em uma cadeia carbônica, o carbono pode ser classificado de acordo com o número de outros átomos de carbono a ele ligados.</p>
+      <figure class="figure figure--light">
+        <img src="./img/tabelaligacao.png" alt="Tabela de classificação do carbono conforme o número de carbonos ligados">
+        <figcaption>Classificação do carbono conforme os carbonos vizinhos</figcaption>
+      </figure>
+
+      <h2><span class="idx">01.3</span>Outras classificações</h2>
+      <p><strong>Carbono quiral:</strong> átomo de carbono que possui 4 ligações sigma realizadas com 4 substituintes diferentes.</p>
+      <figure class="figure figure--light">
+        <img src="./img/carbono-quiral.png" alt="Exemplo de molécula com carbono quiral">
+        <figcaption>Exemplo de carbono quiral</figcaption>
+      </figure>
+      <p><strong>Carbono saturado:</strong> quando apresenta quatro ligações simples. Essas ligações são denominadas sigma (σ).</p>
+      <p><strong>Carbono insaturado:</strong> quando apresenta pelo menos uma ligação dupla ou tripla. Essas ligações possuem uma denominada pi (π).</p>
+      <figure class="figure figure--light">
+        <img src="./img/sigma.png" alt="Representação das ligações sigma e pi">
+        <figcaption>Ligações sigma (σ) e pi (π)</figcaption>
+      </figure>
+
+      <h2><span class="idx">01.4</span>Hibridização</h2>
+      <p>Para realizar quatro ligações do tipo sigma, o carbono precisaria de quatro orbitais incompletos, responsáveis por essas ligações. Mas, ao observar os orbitais do carbono, vemos que isso não é possível de imediato.</p>
+      <p>A fim de adquirir os 4 orbitais incompletos necessários para as suas 4 ligações sigma, o carbono passa por um processo chamado de hibridização, tornando-se um elemento tetravalente.</p>
+      <p>A partir da hibridização, podemos classificar o carbono como tendo hibridização do tipo <span class="formula">sp</span>, <span class="formula">sp<sub>2</sub></span> ou <span class="formula">sp<sub>3</sub></span>. Por exemplo:</p>
+      <figure class="figure figure--light">
+        <img src="./img/hibridacao.png" alt="Tabela com exemplos de hibridização sp, sp2 e sp3">
+        <figcaption>Exemplos de hibridização do carbono</figcaption>
+      </figure>
+
+      <p class="source">Fonte (texto adaptado): descomplica.com.br/quimica/cursinho — acesso em set. de 2019.</p>
+
+      <div class="next-steps">
+        <span class="next-steps__label">Continue estudando este tema</span>
+        <a class="next-link" href="video_intro.html">
+          <span>Assistir à vídeo-aula<small>Introdução à química orgânica em vídeo</small></span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="next-link" href="quiz_introd.html">
+          <span>Testar meus conhecimentos<small>5 questões no estilo ENEM</small></span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="QuimicaEZ — início">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 20.5 7v10L12 22 3.5 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.4" fill="currentColor"/>
+          </svg>
+          <span>Quimica<span class="brand__ez">EZ</span></span>
+        </a>
+        <p class="footer__tag">Química orgânica descomplicada: teoria, vídeo-aulas e questões no estilo ENEM.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Estudar</h4>
+          <a href="menu.html">Conteúdo</a>
+          <a href="menu_video_aula.html">Vídeo-aulas</a>
+          <a href="quiz_introd.html">Questões</a>
+        </div>
+        <div class="footer__col">
+          <h4>Temas</h4>
+          <a href="conteudo_Introducao.html">Introdução</a>
+          <a href="conteudo_funcoes.html">Funções orgânicas</a>
+          <a href="conteudo_biocombustivel.html">Biocombustíveis</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__meta">© Trabalho de Conclusão de Curso · IFMS — QuimicaEZ</p>
+  </footer>
+
+  <script src="./js/site.js"></script>
+</body>
 </html>
